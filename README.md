@@ -18,6 +18,9 @@ SPF
 ![SPF8Mobile1](https://user-images.githubusercontent.com/83293460/126356412-2089b5f1-4e54-4dc8-aa4b-7c02f15179aa.png)
 ![SPF9Mobile2](https://user-images.githubusercontent.com/83293460/126356408-dd46f2d8-0cc6-4af9-b334-463e7fbefd53.png)
 
+## Component Hierarchy & React Architecture Diagram
+![SPFComponentHierachy](https://user-images.githubusercontent.com/83293460/126376995-aa0b4834-4ed8-4696-a9dc-33d79138ac2d.png)
+
 ## API and Data Sample
 
 
@@ -81,3 +84,5 @@ SPF
 - JavaScript/ReactJS
 - Figma
 
+## Team Expectations
+https://docs.google.com/document/d/1i31gA3Vc8bfQkV9DNhnWgt2bEkrM8aP8M-wCNPL8gGY/edit?usp=sharing
