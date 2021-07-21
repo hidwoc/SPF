@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/ansarisalmansaa/SPF#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.13.3",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
