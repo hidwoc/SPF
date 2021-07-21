@@ -24,4 +24,4 @@ const Sunscreen = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("sunscreen", Sunscreen);
+export default mongoose.model("sunscreens", Sunscreen);

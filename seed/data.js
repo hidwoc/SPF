@@ -31,7 +31,7 @@ const insertData = async () => {
     {
       name: "Nivea Sun Kids",
       SPF: "50",
-      Price: "15.55",
+      price: "15.55",
       imgURL:
         "https://w7.pngwing.com/pngs/959/776/png-transparent-sunscreen-nivea-sun-after-sun-moisture-soothing-lotion-factor-de-proteccion-solar-kids-swimming-pool-thumbnail.png",
       applyTo: "body",
@@ -56,7 +56,7 @@ const insertData = async () => {
       category: ["sports", "waterproof"],
     },
     {
-      Name: "Hawaiian Tropic Tropical Tanning Oil",
+      name: "Hawaiian Tropic Tropical Tanning Oil",
       SPF: "6",
       price: "8.99",
       imgURL:
