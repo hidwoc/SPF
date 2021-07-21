@@ -1,0 +1,35 @@
+{
+  "name": "spf",
+  "version": "1.0.0",
+  "description": "# Project Name SPF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:seed": "node seed/data.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansarisalmansaa/SPF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ansarisalmansaa/SPF/issues"
+  },
+  "homepage": "https://github.com/ansarisalmansaa/SPF#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "type": "module"
+}
