@@ -8,8 +8,8 @@ const Sunscreen = new Schema(
     price: { type: String, required: true },
     imgURL: { type: String, required: true },
     applyTo: { type: String, enum: ["face", "body"], required: true },
-    category: {
-      type: Array,
+    category: [{
+      type: String,
       enum: [
         "every day",
         "waterproof",
@@ -19,9 +19,9 @@ const Sunscreen = new Schema(
         "sports",
       ],
       required: true,
-    },
+    }],
   },
   { timestamps: true }
 );
 
-export default mongoose.model("sunscreens", Sunscreen);
+export default mongoose.model("sunscreen", Sunscreen);
