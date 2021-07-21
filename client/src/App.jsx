@@ -2,9 +2,15 @@ import { useState, useEffect } from "react";
 import { signUp, verifyUser } from "./services/users.js";
 import * as api from "./services/sunscreens.js";
 import { Route, Switch, Redirect } from "react-router-dom";
+import AddSunscreen from "./screens/AddSunscreen/AddSunscreen"
+import EditSunscreen from "./screens/EditSunscreen/EditSunscreen"
+import SignIn from "./screens/SignIn/SignIn"
+import SignOut from "./screens/SignOut/SignOut"
+import SignUp from "./screens/SignUp/SignUp";
+import Sunscreens from "./screens/Sunscreens/Sunscreens"
+import SunscreenDetails from "./screens/SunscreenDetails/SunscreenDetails"
+import Welcome from "./screens/Welcome/Welcome"
 import "./App.css";
-import SignUp from "./screens/SignUp/SignUp.jsx";
-import { isNull } from "lodash";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -30,21 +36,29 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
-          Welcome!
+          <Welcome user={user}/>
         </Route>
         <Route path="/sign-up">
           <SignUp setUser={setUser} />
         </Route>
-        <Route path="/sign-in">Sign in!</Route>
-        <Route path="/sign-out">Sign out!</Route>
-        <Route path="/sunscreens">Sunscreens!</Route>
-        <Route path="/sunscreens/:id">Sunscreen details</Route>
+        <Route path="/sign-in">
+          <SignIn setUser={setUser}/>
+        </Route>
+        <Route path="/sign-out">
+          <SignOut setUser={setUser}/>
+        </Route>
+        <Route path="/sunscreens">
+          <Sunscreens user={user}/>
+        </Route>
+        <Route path="/sunscreens/:id">
+          <SunscreenDetails user={user}/>
+        </Route>
         <Route path="/add-sunscreen">
-          Add Sunscreen!
+          <AddSunscreen user={user}/>
           {/* redirect restrict */}
         </Route>
         <Route path="/sunscreens/:id/edit">
-          Edit Sunscreens!
+          <EditSunscreen user={user}/>
           {/* redirect restrict */}
         </Route>
       </Switch>
