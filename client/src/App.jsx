@@ -1,25 +1,29 @@
 import { useState, useEffect } from "react";
-import { verifyUser } from "./services/users.js";
+import { signUp, verifyUser } from "./services/users.js";
 import * as api from "./services/sunscreens.js";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
+import SignUp from "./screens/SignUp/SignUp.jsx";
+import { isNull } from "lodash";
 
 function App() {
+  const [user, setUser] = useState(null);
   useEffect(() => {
     const fetchUser = async () => {
       const user = await verifyUser();
-      console.log(user);
+      user ? setUser(user) : setUser(null);
     };
-    const fetchData = async () => {
-      const sunscreens = await api.getAllSunscreens();
-      console.log(sunscreens);
-    };
-    // fetchData();
-    const fetchOneSunscreen = async () => {
-      const sunscreen = await api.getOneSunscreen("60f848499c8114b6eb43c591");
-      console.log(sunscreen);
-    };
-    fetchOneSunscreen();
+    fetchUser();
+    // const fetchData = async () => {
+    //   const sunscreens = await api.getAllSunscreens();
+    //   console.log(sunscreens);
+    // };
+    // // fetchData();
+    // const fetchOneSunscreen = async () => {
+    //   const sunscreen = await api.getOneSunscreen("60f848499c8114b6eb43c591");
+    //   console.log(sunscreen);
+    // };
+    // fetchOneSunscreen();
   }, []);
 
   return (
@@ -28,7 +32,9 @@ function App() {
         <Route exact path="/">
           Welcome!
         </Route>
-        <Route path="/sign-up">Sign up!</Route>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser} />
+        </Route>
         <Route path="/sign-in">Sign in!</Route>
         <Route path="/sign-out">Sign out!</Route>
         <Route path="/sunscreens">Sunscreens!</Route>
