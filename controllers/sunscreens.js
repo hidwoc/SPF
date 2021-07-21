@@ -1,15 +1,13 @@
 import Suncreen from '../models/sunscreen.js'
 
 export const getSuncreens = async (req, res) => {
-  res.json([])
-  // try {
-  //   const suncreens = await Suncreen.find()
-  //   console.log(suncreens)
-  //   res.json(suncreens)
-  // } catch (error) {
-  //   console.log(error.message)
-  //   res.status(500).json({ error: error.message })
-  // }
+  try {
+    const suncreens = await Suncreen.find()
+    res.json(suncreens)
+  } catch (error) {
+    console.log(error.message)
+    res.status(500).json({ error: error.message })
+  }
 }
 
 export const getOneSuncreen = async (req, res) => {
