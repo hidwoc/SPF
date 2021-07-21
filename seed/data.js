@@ -27,7 +27,7 @@ const insertData = async () => {
   });
   await user3.save();
 
-  const products = [
+  const sunscreens = [
     {
       name: "Nivea Sun Kids",
       SPF: "50",
