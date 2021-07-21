@@ -1,5 +1,6 @@
 # SPF
-
+## Deploy Link
+https://serene-earth-24708.herokuapp.com/
 # Project Name
 SPF
 
@@ -47,8 +48,8 @@ SPF
 
 | Day | Components | Status |
 | --- | :---: |  :---: | 
-| Tuesday July 20|Project 2 Pitches Approval / Research| Incomplete|  
-| Wednesday July 21 | Deploy to Heroku| Incomplete| 
+| Tuesday July 20|Project 2 Pitches Approval / Research| complete|  
+| Wednesday July 21 | Deploy to Heroku| complete| 
 | Thursday July 22| Build React Skeleton | Incomplete|  
 | Friday July 23| MVP | Incomplete| 
 | Monday July 24| CSS | Incomplete|
@@ -61,11 +62,11 @@ SPF
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Sunblock Research| H | 1hrs|  N/A  | N/A |
-| Schema- Models set up | H | 2hrs|   N/A  | N/A |
-| Routes set up| H | 2hrs|   N/A  | N/A |
-| Controller set up | H | 3hrs|   N/A   | N/A |
-| Database Testing| H | 1hrs|   N/A   | N/A |
+| Sunblock Research| H | 1hrs|  N/A  | 1 hour |
+| Schema- Models set up | H | 2hrs|   N/A  | 1 hour |
+| Routes set up| H | 2hrs|   N/A  | 2 hour |
+| Controller set up | H | 3hrs|   N/A   | 1 hour |
+| Database Testing| H | 1hrs|   N/A   | 1 hour |
 | React Skeleton| H | 3hrs|   N/A   | N/A |
 | Screens and Components| H | 3hrs|  N/A    | N/A |
 | Services | H | 2hrs|   N/A   | N/A |
