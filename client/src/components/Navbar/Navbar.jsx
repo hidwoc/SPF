@@ -10,7 +10,7 @@ const Navbar = ({ user }) => {
           {user ? (
             <Link to="/add-sunscreen">ADD NEW</Link>
           ) : (
-            <Link to="sign-up">SIGN UP</Link>
+            <Link to="/sign-up">SIGN UP</Link>
           )}
           {user ? (
             <Link to="/sign-out">SIGN OUT</Link>
