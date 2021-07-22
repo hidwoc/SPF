@@ -34,7 +34,7 @@ const AddSunscreen = (props) => {
       ...sunscreen,
       category: updatedCheck.reduce((acc, curr, index) => {
         if (curr) {
-          acc.push(categories[index].toLowerCase());
+          acc.push(categories[index]);
         }
         return acc
       }, []),
@@ -132,7 +132,7 @@ const AddSunscreen = (props) => {
               className="checkbox"
               id="category"
               name="category"
-              value={sunscreen.category}
+              // value={sunscreen.category}
             >
               {categories.map((category, index) => (
                 <div
