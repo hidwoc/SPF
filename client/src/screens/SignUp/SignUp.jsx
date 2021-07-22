@@ -56,7 +56,7 @@ const SignUp = (props) => {
   const { username, email, password, passwordConfirmation } = form;
 
   return (
-    <Layout>
+    <Layout user= {props.user}>
       <div className="form-container">
         <h3>Sign Up</h3>
         <form onSubmit={onSignUp}>
