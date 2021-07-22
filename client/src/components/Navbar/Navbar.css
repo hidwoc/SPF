@@ -1,0 +1,31 @@
+nav {
+  background-color: #ffd346;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100vw;
+}
+
+.welcome {
+
+}
+
+.links {
+  width: 33vw;
+  display: flex;
+  justify-content: space-evenly;
+}
