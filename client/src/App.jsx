@@ -47,10 +47,10 @@ function App() {
         <Route path="/sign-out">
           <SignOut setUser={setUser}/>
         </Route>
-        <Route path="/sunscreens">
+        <Route exact path="/sunscreens">
           <Sunscreens user={user}/>
         </Route>
-        <Route path="/sunscreens/:id">
+        <Route exact path="/sunscreens/:id">
           <SunscreenDetails user={user}/>
         </Route>
         <Route path="/add-sunscreen">

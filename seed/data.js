@@ -34,8 +34,8 @@ const insertData = async () => {
       price: "15.55",
       imgURL:
         "https://w7.pngwing.com/pngs/959/776/png-transparent-sunscreen-nivea-sun-after-sun-moisture-soothing-lotion-factor-de-proteccion-solar-kids-swimming-pool-thumbnail.png",
-      applyTo: "body",
-      category: ["kids"],
+      applyTo: "Body",
+      category: ["Kids"],
     },
     {
       name: "Hawaiian Tropic Sensitive Skin",
@@ -43,8 +43,8 @@ const insertData = async () => {
       price: "9.99",
       imgURL:
         "https://w7.pngwing.com/pngs/562/224/png-transparent-sunscreen-hawaiian-tropic-silk-hydration-after-sun-lotion-hawaiian-tropic-silk-hydration-after-sun-lotion-factor-de-proteccion-solar-body-skin-cream-sunscreen-sun-tanning-thumbnail.png",
-      applyTo: "body",
-      category: ["sensitive skin", "every day"],
+      applyTo: "Body",
+      category: ["Sensitive Skin", "Every Day"],
     },
     {
       name: "Dermalogica Sport Protection",
@@ -52,8 +52,8 @@ const insertData = async () => {
       price: "36.00",
       imgURL:
         "https://w7.pngwing.com/pngs/691/418/png-transparent-sunscreen-dermalogica-age-smart-dynamic-skin-recovery-factor-de-proteccion-solar-sport-others-cream-sport-cosmetics-thumbnail.png",
-      applyTo: "body",
-      category: ["sports", "waterproof"],
+      applyTo: "Body",
+      category: ["Sports", "Waterproof"],
     },
     {
       name: "Hawaiian Tropic Tropical Tanning Oil",
@@ -61,8 +61,8 @@ const insertData = async () => {
       price: "8.99",
       imgURL:
         "https://w7.pngwing.com/pngs/606/457/png-transparent-sunscreen-lotion-hawaiian-tropic-sun-tanning-factor-de-proteccion-solar-oil-miscellaneous-cream-perfume-thumbnail.png",
-      applyTo: "body",
-      category: ["tanning"],
+      applyTo: "Body",
+      category: ["Tanning"],
     },
     {
       name: "Sun Bum Original",
@@ -70,8 +70,8 @@ const insertData = async () => {
       price: "15.99",
       imgURL:
         "https://cdn.shopify.com/s/files/1/0053/1798/4323/products/20-40015_SB_Original_SPF_15_Lotion_8_OZ_Front_1400x1400.png",
-      applyTo: "body",
-      category: ["every day"],
+      applyTo: "Body",
+      category: ["Every Day"],
     },
     {
       name: "Neutrogena Ultra Sheer Clear Face",
@@ -79,11 +79,10 @@ const insertData = async () => {
       price: "14.99",
       imgURL:
         "https://www.vhv.rs/dpng/d/456-4561058_neutrogena-ultra-sheer-clear-face-lotion-spf30-88ml.png",
-      applyTo: "face",
-      category: ["every day"],
+      applyTo: "Face",
+      category: ["Every Day"],
     },
   ];
-
   await Sunscreen.insertMany(sunscreens);
   console.log("Created users & sunscreens!");
 

@@ -10,7 +10,7 @@ const AddSunscreen = (props) => {
     SPF: "",
     price: "",
     imgURL: "",
-    applyTo: "body",
+    applyTo: "Body",
     category: [],
   });
   {/* Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/ */ }
@@ -116,13 +116,13 @@ const AddSunscreen = (props) => {
                   type="radio"
                   name="applyTo"
                   id="body"
-                  value="body"
+                  value="Body"
                   defaultChecked
                 />
                 <label htmlFor="body">Body</label>
               </div>
               <div id="applyTo-face">
-                <input type="radio" name="applyTo" id="face" value="face" />
+                <input type="radio" name="applyTo" id="face" value="Face" />
                 <label htmlFor="face">Face</label>
               </div>
             </fieldset>
