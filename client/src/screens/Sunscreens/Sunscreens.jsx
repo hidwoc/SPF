@@ -16,7 +16,7 @@ const Sunscreens = (props) => {
   }, []);
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <main>
         <div className="allTheScreens">
           {sunscreens.map((sunscreen) => (
