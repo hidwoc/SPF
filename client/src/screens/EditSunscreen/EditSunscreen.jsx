@@ -35,7 +35,7 @@ const EditSunscreen = (props) => {
         .map((category) => categories.indexOf(category))
         .map((index) => checkedArray
           .splice(index, 1, true))
-      setChecked(checked)
+      setChecked(checkedArray)
     };
     fetchSunscreen();
   }, [id]);
@@ -64,12 +64,16 @@ const EditSunscreen = (props) => {
     });
   };
 
-  const handleDelete = async () => {
+  const handleDelete = async (e) => {
     await deleteSunscreen(id);
+    e.preventDefault()
     console.log("deleted!");
     return <Redirect to="/sunscreens"/>
   };
-
+  /**
+   * ? Successfully DELETES, but instead of Redirecting, it goes and PUTs, then is unable to return to /sunscreens
+   * I'm thinking that the handleDelete is also causing the form to submit, therefore triggering handleSubmit...
+   */
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updated = await editSunscreen(id, sunscreen);
