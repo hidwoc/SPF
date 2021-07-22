@@ -17,9 +17,7 @@ const EditSunscreen = (props) => {
     applyTo: "",
     category: [],
   });
-  {
-    /* Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/ */
-  }
+
   const [checked, setChecked] = useState(
     new Array(categories.length).fill(false)
   );
@@ -31,10 +29,13 @@ const EditSunscreen = (props) => {
     const fetchSunscreen = async () => {
       const sunscreen = await getOneSunscreen(id);
       setSunscreen(sunscreen);
-      // const checkedBoxes = sunscreen.category
-      //   .map((category) => categories.indexOf(category))
-      //   .map((index) => );
-      // if [categories] --> setCheck(checked[index] = true))
+    
+      const checkedArray = new Array(categories.length).fill(false)
+      sunscreen.category
+        .map((category) => categories.indexOf(category))
+        .map((index) => checkedArray
+          .splice(index, 1, true))
+      setChecked(checked)
     };
     fetchSunscreen();
   }, [id]);
@@ -56,7 +57,7 @@ const EditSunscreen = (props) => {
       ...sunscreen,
       category: updatedCheck.reduce((acc, curr, index) => {
         if (curr) {
-          acc.push(categories[index].toLowerCase());
+          acc.push(categories[index]);
         }
         return acc;
       }, []),
@@ -64,18 +65,20 @@ const EditSunscreen = (props) => {
   };
 
   const handleDelete = async () => {
-    const deleted = await deleteSunscreen(id);
-    setUpdated({ deleted });
+    await deleteSunscreen(id);
+    console.log("deleted!");
+    return <Redirect to="/sunscreens"/>
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updated = await editSunscreen(id, sunscreen);
+    console.log("updated!");
     setUpdated({ updated });
   };
 
   if (isUpdated) {
-    return <Redirect to={`/sunscreens`} />;
+    return <Redirect to={`/sunscreens/${id}`} />;
   }
 
   return (
@@ -197,3 +200,5 @@ const EditSunscreen = (props) => {
 };
 
 export default EditSunscreen;
+
+// Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
