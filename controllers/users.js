@@ -1,6 +1,5 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { addListener } from "nodemon";
 
 import User from "../models/user.js";
 
