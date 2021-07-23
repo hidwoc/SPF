@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { signUp, verifyUser } from "./services/users.js";
-import * as api from "./services/sunscreens.js";
+import { verifyUser } from "./services/users.js";
 import { Route, Switch, Redirect } from "react-router-dom";
 import AddSunscreen from "./screens/AddSunscreen/AddSunscreen"
 import EditSunscreen from "./screens/EditSunscreen/EditSunscreen"
@@ -20,16 +19,6 @@ function App() {
       user ? setUser(user) : setUser(null);
     };
     fetchUser();
-    // const fetchData = async () => {
-    //   const sunscreens = await api.getAllSunscreens();
-    //   console.log(sunscreens);
-    // };
-    // // fetchData();
-    // const fetchOneSunscreen = async () => {
-    //   const sunscreen = await api.getOneSunscreen("60f848499c8114b6eb43c591");
-    //   console.log(sunscreen);
-    // };
-    // fetchOneSunscreen();
   }, []);
 
   return (
@@ -54,12 +43,10 @@ function App() {
           <SunscreenDetails user={user}/>
         </Route>
         <Route path="/add-sunscreen">
-          <AddSunscreen user={user}/>
-          {/* redirect restrict */}
+          {user ? <AddSunscreen user={user}/> : <Redirect to="/sign-in" />}
         </Route>
         <Route path="/sunscreens/:id/edit">
-          <EditSunscreen user={user}/>
-          {/* redirect restrict */}
+          {user ? <EditSunscreen user={user}/> : <Redirect to="/sign-in" />}
         </Route>
       </Switch>
     </div>
