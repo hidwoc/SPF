@@ -1,5 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Pacifico&family=Stylish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Pacifico&family=Stylish&display=swap");
 
 body {
-  font-family: 'Stylish', sans-serif;
+  font-family: "Stylish", sans-serif;
+}
+button {
+  border-radius: 10px;
+  font-family: "Stylish", sans-serif;
+  padding: 5px 15px;
+  border: transparent 2px;
+}
+
+.form-container {
+  height: 70%;
+  background: rgba(115, 228, 253, 0.38);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+input {
+  margin: 10px;
+  border-radius: 20px;
+  border: transparent 2px;
+  height: 30px;
+  text-align: center;
+  font-family: "Stylish", sans-serif;
+}
+::placeholder {
+  color: #c4c4c4;
 }
