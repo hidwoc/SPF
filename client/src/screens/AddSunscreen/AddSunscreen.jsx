@@ -13,7 +13,6 @@ const AddSunscreen = (props) => {
     applyTo: "Body",
     category: [],
   });
-  {/* Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/ */ }
   const [checked, setChecked] = useState(
     new Array(categories.length).fill(false)
   );
@@ -35,7 +34,7 @@ const AddSunscreen = (props) => {
       ...sunscreen,
       category: updatedCheck.reduce((acc, curr, index) => {
         if (curr) {
-          acc.push(categories[index].toLowerCase());
+          acc.push(categories[index]);
         }
         return acc
       }, []),
@@ -133,7 +132,7 @@ const AddSunscreen = (props) => {
               className="checkbox"
               id="category"
               name="category"
-              value={sunscreen.category}
+              // value={sunscreen.category}
             >
               {categories.map((category, index) => (
                 <div
@@ -168,3 +167,5 @@ const AddSunscreen = (props) => {
 };
 
 export default AddSunscreen;
+
+// Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/

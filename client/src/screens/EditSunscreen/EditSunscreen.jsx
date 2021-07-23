@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Redirect, useParams } from "react-router-dom";
+import { Redirect, useParams, useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import {
   getOneSunscreen,
@@ -17,24 +17,26 @@ const EditSunscreen = (props) => {
     applyTo: "",
     category: [],
   });
-  {
-    /* Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/ */
-  }
+
   const [checked, setChecked] = useState(
     new Array(categories.length).fill(false)
   );
   const [isUpdated, setUpdated] = useState(false);
 
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchSunscreen = async () => {
       const sunscreen = await getOneSunscreen(id);
       setSunscreen(sunscreen);
-      // const checkedBoxes = sunscreen.category
-      //   .map((category) => categories.indexOf(category))
-      //   .map((index) => );
-      // if [categories] --> setCheck(checked[index] = true))
+    
+      const checkedArray = new Array(categories.length).fill(false)
+      sunscreen.category
+        .map((category) => categories.indexOf(category))
+        .map((index) => checkedArray
+          .splice(index, 1, true))
+      setChecked(checkedArray)
     };
     fetchSunscreen();
   }, [id]);
@@ -56,16 +58,16 @@ const EditSunscreen = (props) => {
       ...sunscreen,
       category: updatedCheck.reduce((acc, curr, index) => {
         if (curr) {
-          acc.push(categories[index].toLowerCase());
+          acc.push(categories[index]);
         }
         return acc;
       }, []),
     });
   };
 
-  const handleDelete = async () => {
-    const deleted = await deleteSunscreen(id);
-    setUpdated({ deleted });
+  const handleDelete = async (e) => {
+    await deleteSunscreen(id);
+    history.push("/sunscreens")
   };
 
   const handleSubmit = async (e) => {
@@ -75,7 +77,7 @@ const EditSunscreen = (props) => {
   };
 
   if (isUpdated) {
-    return <Redirect to={`/sunscreens`} />;
+    return <Redirect to={`/sunscreens/${id}`} />;
   }
 
   return (
@@ -187,13 +189,15 @@ const EditSunscreen = (props) => {
           <button className="save-button" type="submit">
             Save
           </button>
-          <button className="delete-button" onClick={handleDelete}>
-            Delete
-          </button>
         </form>
+        <button className="delete-button" onClick={handleDelete}> 
+          Delete
+        </button>
       </div>
     </Layout>
   );
 };
 
 export default EditSunscreen;
+
+// Handling multiple checkboxes in React: https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
