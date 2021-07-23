@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Redirect, useParams } from "react-router-dom";
+import { Redirect, useParams, useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import {
   getOneSunscreen,
@@ -24,6 +24,7 @@ const EditSunscreen = (props) => {
   const [isUpdated, setUpdated] = useState(false);
 
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchSunscreen = async () => {
@@ -66,18 +67,12 @@ const EditSunscreen = (props) => {
 
   const handleDelete = async (e) => {
     await deleteSunscreen(id);
-    e.preventDefault()
-    console.log("deleted!");
-    return <Redirect to="/sunscreens"/>
+    history.push("/sunscreens")
   };
-  /**
-   * ? Successfully DELETES, but instead of Redirecting, it goes and PUTs, then is unable to return to /sunscreens
-   * I'm thinking that the handleDelete is also causing the form to submit, therefore triggering handleSubmit...
-   */
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updated = await editSunscreen(id, sunscreen);
-    console.log("updated!");
     setUpdated({ updated });
   };
 
@@ -194,10 +189,10 @@ const EditSunscreen = (props) => {
           <button className="save-button" type="submit">
             Save
           </button>
-          <button className="delete-button" onClick={handleDelete}>
-            Delete
-          </button>
         </form>
+        <button className="delete-button" onClick={handleDelete}> 
+          Delete
+        </button>
       </div>
     </Layout>
   );
