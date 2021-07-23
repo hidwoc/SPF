@@ -3,9 +3,11 @@ nav {
   box-shadow: 1px 1px 1px 1px #acabab3a;
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 7vh;
   width: 100vw;
+  top: 0;
   position: fixed;
+  z-index: 1;
 }
 
 nav a {
@@ -26,7 +28,7 @@ nav a {
 .welcome {
   font-family: 'Orbitron', serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .links {
