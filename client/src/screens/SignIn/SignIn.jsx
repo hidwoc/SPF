@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import "./SignIn.css";
 const SignIn = (props) => {
   const history = useHistory();
 
@@ -75,7 +76,7 @@ const SignIn = (props) => {
             placeholder="Password"
             onChange={handleChange}
           />
-          {renderError()}
+          <div className="button-container">{renderError()}</div>
         </form>
       </div>
     </Layout>

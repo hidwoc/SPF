@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signUp } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import "./SignUp.css";
 const SignUp = (props) => {
   const history = useHistory();
 
@@ -56,47 +57,49 @@ const SignUp = (props) => {
   const { username, email, password, passwordConfirmation } = form;
 
   return (
-    <Layout user= {props.user}>
-      <div className="form-container">
-        <h3>Sign Up</h3>
-        <form onSubmit={onSignUp}>
-          <input
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Username"
-            onChange={handleChange}
-          />
+    <Layout user={props.user}>
+      <div className="container">
+        <div className="form-container">
+          <h3>Sign Up</h3>
+          <form onSubmit={onSignUp}>
+            <input
+              required
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Username"
+              onChange={handleChange}
+            />
 
-          <input
-            required
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Email"
-            onChange={handleChange}
-          />
+            <input
+              required
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Email"
+              onChange={handleChange}
+            />
 
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
+            <input
+              required
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Password"
+              onChange={handleChange}
+            />
 
-          <input
-            required
-            name="passwordConfirmation"
-            value={passwordConfirmation}
-            type="password"
-            placeholder="Confirm Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
+            <input
+              required
+              name="passwordConfirmation"
+              value={passwordConfirmation}
+              type="password"
+              placeholder="Confirm Password"
+              onChange={handleChange}
+            />
+            <div className="button-container">{renderError()}</div>
+          </form>
+        </div>
       </div>
     </Layout>
   );
