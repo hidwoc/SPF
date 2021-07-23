@@ -1,14 +1,44 @@
-a{
+a {
   text-decoration: none;
   color: black;
 }
-/* 
-.sunscreen-card{display: flex;
+
+.sunscreen-card {
+  display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 3px 1px #cecece;
   transition: all 0.25s;
-  padding: 20px;
+  /* padding: 20px; */
   margin: 10px 10px 60px;
+  background-color: rgba(255, 255, 255, 0.338);
+  border-radius: 20px;
+    
 }
- */
+.sunscreen-card:hover{
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
+.allTheScreens{
+  
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.price{
+  width: 332px;
+  height: 60px;
+  object-fit: cover;
+  background: #ffb899bf;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  /* position:sticky */
+}
