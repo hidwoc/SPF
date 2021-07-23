@@ -30,13 +30,12 @@ const EditSunscreen = (props) => {
     const fetchSunscreen = async () => {
       const sunscreen = await getOneSunscreen(id);
       setSunscreen(sunscreen);
-    
-      const checkedArray = new Array(categories.length).fill(false)
+
+      const checkedArray = new Array(categories.length).fill(false);
       sunscreen.category
         .map((category) => categories.indexOf(category))
-        .map((index) => checkedArray
-          .splice(index, 1, true))
-      setChecked(checkedArray)
+        .map((index) => checkedArray.splice(index, 1, true));
+      setChecked(checkedArray);
     };
     fetchSunscreen();
   }, [id]);
@@ -67,7 +66,7 @@ const EditSunscreen = (props) => {
 
   const handleDelete = async (e) => {
     await deleteSunscreen(id);
-    history.push("/sunscreens")
+    history.push("/sunscreens");
   };
 
   const handleSubmit = async (e) => {
@@ -82,7 +81,7 @@ const EditSunscreen = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="edit-sunscreen">
+      <div className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="input-name">
             <label htmlFor="name">Name:</label>
@@ -186,11 +185,13 @@ const EditSunscreen = (props) => {
               ))}
             </fieldset>
           </div>
-          <button className="save-button" type="submit">
-            Save
-          </button>
+          <div className="button-container">
+            <button className="save-button" type="submit">
+              Save
+            </button>
+          </div>
         </form>
-        <button className="delete-button" onClick={handleDelete}> 
+        <button className="delete-button" onClick={handleDelete}>
           Delete
         </button>
       </div>

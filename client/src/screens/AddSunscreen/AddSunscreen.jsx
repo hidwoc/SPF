@@ -26,24 +26,27 @@ const AddSunscreen = (props) => {
       [name]: value,
     });
   };
-  
+
   const handleCheck = (position) => {
-    const updatedCheck = checked.map((curr, index) => index === position ? !curr : curr)
-    setChecked(updatedCheck)
+    const updatedCheck = checked.map((curr, index) =>
+      index === position ? !curr : curr
+    );
+    setChecked(updatedCheck);
     setSunscreen({
       ...sunscreen,
       category: updatedCheck.reduce((acc, curr, index) => {
         if (curr) {
           acc.push(categories[index]);
         }
-        return acc
+        return acc;
       }, []),
     });
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const created = await createSunscreen(sunscreen);
+
     setCreated({ created });
   };
 
@@ -53,7 +56,7 @@ const AddSunscreen = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="add-sunscreen">
+      <div className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="input-name">
             <label htmlFor="name">Name:</label>
@@ -157,9 +160,11 @@ const AddSunscreen = (props) => {
               ))}
             </fieldset>
           </div>
-          <button className="add-button" type="submit">
-            Add Sunscreen
-          </button>
+          <div className="button-container">
+            <button className="add-button" type="submit">
+              Add Sunscreen
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

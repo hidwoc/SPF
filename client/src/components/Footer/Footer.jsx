@@ -1,8 +1,11 @@
+import "./Footer.css"
+
 const Footer = () => {
+
   return (
     <footer>
       <div className="copyright">
-        &copy Salman Ansari, Heidi Choi, Trisha Marchena 2021
+      © Salman Ansari, Heidi Choi, Trisha Marchena 2021
       </div>
     </footer>
   );
