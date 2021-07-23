@@ -1,3 +1,8 @@
-.layout-children {
-  background-image: url("https://i.ibb.co/wyWcRx5/seabeach-5405231-1280-1.png");
+body {
+background-repeat: no-repeat; 
+position: fixed;
+background-image: url("beach.png");
+background-size: cover;
+
 }
+
