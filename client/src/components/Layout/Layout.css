@@ -1,10 +1,11 @@
 body {
-background-repeat: no-repeat; 
-/* position: fixed; */
-background-image: url("beach.png");
-background-size: cover;
+  background-repeat: no-repeat;
+  /* position: fixed; */
+  background-image: url("beach.png");
+  background-size: cover;
 }
 
-.layout-children{
-    width: 100vw;
+.layout-children {
+  width: 100vw;
+  margin-top: 7vh;
 }
