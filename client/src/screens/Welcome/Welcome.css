@@ -1,0 +1,9 @@
+.WelcomeContainer {
+  background: rgba(255, 183, 153, 0.82);
+  border-radius: 70px;
+  width: 50%;
+  text-align: center;
+}
+.SunImg{
+    float: right;
+}
