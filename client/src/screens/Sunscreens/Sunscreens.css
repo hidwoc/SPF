@@ -15,6 +15,10 @@ a {
   border-radius: 20px;
     
 }
+.sunscreen-card:hover{
+  transform: scale(1.01);
+  opacity: 0.9;
+}
 
 .allTheScreens{
   
