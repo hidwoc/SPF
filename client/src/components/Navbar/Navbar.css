@@ -5,6 +5,7 @@ nav {
   align-items: center;
   height: 7vh;
   width: 100vw;
+  top: 0;
   position: fixed;
   z-index: 1;
 }
@@ -27,7 +28,7 @@ nav a {
 .welcome {
   font-family: 'Orbitron', serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .links {
