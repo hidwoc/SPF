@@ -1,0 +1,78 @@
+.form-container {
+  /* remove background in App.css */
+  background: #FFB799;
+  opacity: 82%;
+  margin: 100px;
+  width: 75vw;
+}
+
+form {
+  margin: 20px;
+}
+
+form input {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.input-name input{
+  width: 80%;
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.numbers-container input {
+  width: 60%;
+}
+
+.input-spf {
+  width: 50%;
+}
+
+.input-price {
+  width: 50%;
+}
+
+.input-imgURL input {
+  width: 75%;
+}
+
+.input-applyTo {
+  display: flex;
+  align-items: center;
+}
+.input-applyTo fieldset {
+  display: flex;
+  border: none;
+}
+
+.radio-div {
+  display: flex;
+  align-items: center;
+}
+
+.input-category {
+  display: flex;
+  align-items: center;
+}
+
+.input-category fieldset {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.category-item{
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.add-button {
+  background:  #F7EA0B;
+  margin-left: 40%;
+}
+

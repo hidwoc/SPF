@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import { createSunscreen } from "../../services/sunscreens";
 import { categories } from "../../utils/categories";
+import "./AddSunscreen.css";
 
 const AddSunscreen = (props) => {
   const [sunscreen, setSunscreen] = useState({
@@ -70,27 +71,29 @@ const AddSunscreen = (props) => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-spf">
-            <label htmlFor="spf">SPF:</label>
-            <input
-              type="text"
-              id="spf"
-              required
-              name="SPF"
-              value={sunscreen.SPF}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="input-price">
-            <label htmlFor="price">Price:</label>
-            <input
-              type="text"
-              id="price"
-              required
-              name="price"
-              value={sunscreen.price}
-              onChange={handleChange}
-            />
+          <div className="numbers-container">
+            <div className="input-spf">
+              <label htmlFor="spf">SPF:</label>
+              <input
+                type="text"
+                id="spf"
+                required
+                name="SPF"
+                value={sunscreen.SPF}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-price">
+              <label htmlFor="price">Price:</label>
+              <input
+                type="text"
+                id="price"
+                required
+                name="price"
+                value={sunscreen.price}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="input-imgURL">
             <label htmlFor="imgURL">Image URL:</label>
@@ -113,7 +116,7 @@ const AddSunscreen = (props) => {
               value={sunscreen.applyTo}
               onChange={handleChange}
             >
-              <div id="applyTo-body">
+              <div className="radio-div" id="applyTo-body">
                 <input
                   type="radio"
                   name="applyTo"
@@ -123,7 +126,7 @@ const AddSunscreen = (props) => {
                 />
                 <label htmlFor="body">Body</label>
               </div>
-              <div id="applyTo-face">
+              <div className="radio-div" id="applyTo-face">
                 <input type="radio" name="applyTo" id="face" value="Face" />
                 <label htmlFor="face">Face</label>
               </div>
