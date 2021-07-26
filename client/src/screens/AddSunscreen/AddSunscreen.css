@@ -1,33 +1,36 @@
-/* button-container ++  text-align: center; */
-
 form label {
+  padding-right: 15px;
   width: 20%;
-  text-align: center;
+  text-align: right;
 }
 
+/* GLOBAL */
 form input {
   background: rgb(255, 255, 255);
 }
 
 .add-edit {
-  background: rgba(255,183,153, .8);
+  background: rgba(255, 183, 153, 0.8);
   box-sizing: border-box;
   padding: 40px;
-  text-align: left;
   width: 75vw;
+}
+
+.add-edit input {
+  text-align: left;
 }
 
 .input-div {
   display: flex;
   align-items: center;
-  /* margin-top: 10px; */
+  margin: 15px 0;
   width: 100%;
 }
 
 #name {
   order: 1;
 }
-#name input{
+#name input {
   width: 80%;
 }
 
@@ -37,7 +40,6 @@ form input {
   display: flex;
   /* TODO media query to 2 rows */
   justify-content: space-between;
-  /* margin-top: 10px; */
   width: 100%;
 }
 
@@ -45,6 +47,9 @@ form input {
   width: 40%;
 }
 
+#spf {
+  width: 57%;
+}
 #spf label {
   width: 40%;
 }
@@ -53,7 +58,10 @@ form input {
   margin-right: 0;
 }
 
-#price label{
+#price {
+  width: 50%;
+}
+#price label {
   width: 40%;
 }
 #price input {
@@ -61,44 +69,38 @@ form input {
 }
 
 #imgURL {
-  /* margin-top: 10px; */
   order: 4;
-}
-#imgURL label {
-  text-align: left;
-  width: 20%
 }
 #imgURL input {
   width: 80%;
 }
 
 #applyTo {
-  /* margin: 10px 0 0; */
+  margin: 10px 0;
   order: 3;
 }
-#applyTo-fieldset{
+#applyTo-fieldset {
   display: flex;
   border: none;
+  width: 75%;
 }
-
 .radio-div {
   display: flex;
   align-items: center;
+  width: 100px;
 }
 
 #category {
-  margin: 0 auto;
   order: 5;
 }
 #category fieldset {
-  margin: 0;
   padding: 0;
   border: none;
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
 }
-
-.category-item{
+.category-item {
   margin-left: 10px;
   /* TODO media query to 2 columns */
   width: 30%;
@@ -106,9 +108,10 @@ form input {
   align-items: center;
 }
 .category-item label {
+  padding-left: 5px;
+  text-align: left;
   width: 100%;
 }
-
 #category-sports-div {
   width: 20%;
 }
@@ -119,12 +122,11 @@ form input {
   width: 40%;
 }
 
-#add-container {
+.button-container {
   order: 6;
+  text-align: center;
 }
 .add-button {
-  margin-top: 15px;
-  background:  #F7EA0B;
+  background: #f7ea0b;
   margin-top: 10px;
 }
-
