@@ -10,6 +10,9 @@ button {
   border: transparent 2px;
   font-size: 28px;
 }
+button:hover{
+  transform: scale(1.01);
+}
 
 .form-container {
   height: 70%;

@@ -49,6 +49,11 @@
   border: transparent 2px;
   font-size: 28px;
 }
+.edit-button:hover{
+  transform: scale(1.01);
+  color: white;
+  border: solid 2px white;
+}
 
 .button-container {
   display: flex;
@@ -56,7 +61,7 @@
 }
 .sunscreen-detailPage-image {
 
-  width: 400px;
+  width: 100%;
   margin: auto;
   max-height: 90%;
 }
