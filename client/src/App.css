@@ -12,12 +12,9 @@ button {
 
 .form-container {
   height: 70%;
-  background: rgba(115, 228, 253, 0.38);
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
   text-align: center;
 }
 

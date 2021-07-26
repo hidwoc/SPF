@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .WelcomeContainer {
   background: rgba(255, 183, 153, 0.82);
   border-radius: 70px;
   width: 50%;
   text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left:25px;
 }
-.SunImg{
-    float: right;
+.WelcomeContainer h1{
+    font-family: 'Pacifico', cursive;
+}
+.SunImg {
+  float: right;
+  
+}
+.WelcomePage{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
 }
