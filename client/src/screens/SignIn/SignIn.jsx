@@ -47,7 +47,11 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Log In</button>;
+      return (
+        <button type="submit" id="login-btn">
+          Log In
+        </button>
+      );
     }
   };
 
