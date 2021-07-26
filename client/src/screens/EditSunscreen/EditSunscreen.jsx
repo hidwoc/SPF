@@ -81,7 +81,7 @@ const EditSunscreen = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container add-edit" id="edit-form">
         <form onSubmit={handleSubmit}>
           <div className="input-name">
             <label htmlFor="name">Name:</label>

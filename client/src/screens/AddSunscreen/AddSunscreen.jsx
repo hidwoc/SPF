@@ -57,7 +57,7 @@ const AddSunscreen = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container add-edit" id="add-form">
         <form onSubmit={handleSubmit}>
           <div className="input-div" id="name">
             <label htmlFor="name">Name:</label>
@@ -161,7 +161,7 @@ const AddSunscreen = (props) => {
               ))}
             </fieldset>
           </div>
-          <div className="button-container">
+          <div className="button-container" id="add-container">
             <button className="add-button" type="submit">
               Add Sunscreen
             </button>
