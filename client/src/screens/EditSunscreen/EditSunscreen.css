@@ -1,0 +1,11 @@
+#save-button {
+  background-color: #f7ea0b;
+  color: #015687;
+  margin: 0 30px;
+}
+
+#delete-button {
+  background-color: #e8703e;
+  color: white;
+  margin: 0 30px;
+}

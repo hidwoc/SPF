@@ -47,7 +47,11 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Log In</button>;
+      return (
+        <button type="submit" id="login-btn">
+          Log In
+        </button>
+      );
     }
   };
 
@@ -55,7 +59,7 @@ const SignIn = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container" id="SignIn-container">
         <h3>Welcome Back!</h3>
         <h3>Sign In</h3>
         <form onSubmit={onSignIn}>

@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout/Layout";
+import "./Welcome.css";
 const Welcome = (props) => {
   return (
     <Layout user={props.user}>
@@ -13,15 +14,10 @@ const Welcome = (props) => {
               that fits your day!
             </h3>
           </div>
-          <div className="SunImg">
-            <img
-              src="https://i.ibb.co/sKmPTLS/sun.png"
-              alt="sun"
-              border="0"
-            ></img>
-            <h3>Block the Sun</h3>
-          </div>
         </div>
+        <div className="SunImg">
+            <img id="sun-image"></img>
+          </div>
       </div>
     </Layout>
   );

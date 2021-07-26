@@ -1,0 +1,163 @@
+form label {
+  padding-right: 15px;
+  width: 20%;
+  text-align: right;
+}
+
+/* GLOBAL */
+form input {
+  background: rgb(255, 255, 255);
+}
+
+.add-edit {
+  background: rgba(255, 183, 153, 0.8);
+  box-sizing: border-box;
+  padding: 40px;
+  width: 75vw;
+  color: #015687;
+}
+
+.add-edit input {
+  text-align: left;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+}
+
+#name {
+  order: 1;
+}
+#name input {
+  width: 80%;
+}
+
+.numbers-container {
+  align-self: flex-end;
+  order: 2;
+  display: flex;
+  /* TODO media query to 2 rows */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.numbers-container input {
+  width: 40%;
+}
+
+#spf {
+  width: 57%;
+}
+#spf label {
+  width: 40%;
+}
+#spf input {
+  width: 60%;
+  margin-right: 0;
+}
+
+#price {
+  width: 50%;
+}
+#price label {
+  width: 40%;
+}
+#price input {
+  width: 60%;
+}
+
+#imgURL {
+  order: 4;
+}
+#imgURL input {
+  width: 80%;
+}
+
+#applyTo {
+  margin: 10px 0;
+  order: 3;
+}
+#applyTo-fieldset {
+  display: flex;
+  border: none;
+  width: 75%;
+}
+.radio-div {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+#category {
+  order: 5;
+}
+#category fieldset {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.category-item {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.category-item label {
+  padding-left: 5px;
+  text-align: left;
+  width: 100%; 
+}
+
+.button-container {
+  order: 6;
+  text-align: center;
+  margin-top: 10px;
+}
+#add-button {
+  background: #f7ea0b;
+  color: #015687;
+}
+
+@media screen and (max-width: 780px) {
+  .add-edit {
+    padding: 20px 20px 20px 10px;
+  }
+  .numbers-container {
+    flex-direction: column;
+  }
+  #spf {
+    width: 100%;
+  }
+  #spf label {
+    width: 20%;
+  }
+  #spf input {
+    width: 80%;
+  }
+  #price {
+    width: 100%;
+  }
+  #price label {
+    width: 20%;
+  }
+  #price input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #category {
+    display: flex;
+    justify-content: space-between;
+  }
+  #category fieldset {
+    width: 65%;
+  }
+  .category-item {
+    width: 100%;
+  }
+}

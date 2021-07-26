@@ -1,0 +1,79 @@
+.detail {
+  display: flex;
+  justify-content: row;
+  margin: 100px auto;
+  width: 85vw;
+  padding: 15px;
+  height: 80vh;
+  left: 165px;
+  top: 138px;
+  background: rgba(195, 252, 241, 0.74);
+   color: #015687;
+  border-radius: 50px;
+  
+}
+.leftSunDetails {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 20px 10px 10px;
+}
+.rightSunDetails {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  
+}
+.applyToAndSPF {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#applyToSpan{
+  margin-left: 15px;
+  background-color: #FFC172;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border: transparent 2px;
+  
+}
+
+.edit-button {
+  background-color: #73e4fd;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border: transparent 2px;
+  font-size: 28px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.sunscreen-detailPage-image {
+
+  width: 400px;
+  margin: auto;
+  max-height: 90%;
+}
+
+.name{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+}
+.price-details {
+  text-align: center;
+  font-size: 28px;
+  z-index: 1;
+  margin-top: 0;
+}
+.category-info{
+  font-size: 25px;
+  text-align: center;
+}

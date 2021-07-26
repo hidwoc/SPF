@@ -3,6 +3,7 @@ import { getAllSunscreens } from "../../services/sunscreens";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
+import "./Sunscreens.css";
 
 const Sunscreens = (props) => {
   const [sunscreens, setSunscreens] = useState([]);

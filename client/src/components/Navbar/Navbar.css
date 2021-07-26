@@ -1,31 +1,42 @@
 nav {
   background-color: #ffd346;
-  height: 10vh;
-  width: 100vw;
+  box-shadow: 1px 1px 1px 1px #acabab3a;
   display: flex;
   align-items: center;
+  height: 7vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #015687;
 }
 
 .navbar {
-  margin: 20px;
+  margin: 0 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   width: 100vw;
+  height: 100%;
 }
 
 .welcome {
-
+  font-family: 'Orbitron', serif;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 
 .links {
+  max-width: 700px;
+  min-width: 350px;
   width: 33vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
 }
