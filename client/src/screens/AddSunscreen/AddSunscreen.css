@@ -14,6 +14,7 @@ form input {
   box-sizing: border-box;
   padding: 40px;
   width: 75vw;
+  color: #015687;
 }
 
 .add-edit input {
@@ -118,6 +119,7 @@ form input {
 }
 #add-button {
   background: #f7ea0b;
+  color: #015687;
 }
 
 @media screen and (max-width: 780px) {
