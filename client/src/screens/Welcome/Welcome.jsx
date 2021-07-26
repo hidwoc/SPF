@@ -16,12 +16,7 @@ const Welcome = (props) => {
           </div>
         </div>
         <div className="SunImg">
-            <img
-              src="https://i.ibb.co/sKmPTLS/sun.png"
-              alt="sun"
-              border="0"
-            ></img>
-            <h3>Block the Sun</h3>
+            <img id="sun-image"></img>
           </div>
       </div>
     </Layout>

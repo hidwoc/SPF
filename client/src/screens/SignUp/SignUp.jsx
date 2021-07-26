@@ -50,7 +50,11 @@ const SignUp = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Submit</button>;
+      return (
+        <button type="submit" id="SignUp-btn">
+          Submit
+        </button>
+      );
     }
   };
 
