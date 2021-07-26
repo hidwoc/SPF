@@ -84,7 +84,7 @@ const EditSunscreen = (props) => {
     <Layout user={props.user}>
       <div className="form-container add-edit" id="edit-form">
         <form onSubmit={handleSubmit}>
-        <div className="input-div" id="name">
+          <div className="input-div" id="name">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -159,14 +159,13 @@ const EditSunscreen = (props) => {
           </div>
           <div className="input-div" id="category">
             <label htmlFor="category-fieldset">Category: </label>
-            <fieldset
-              id="category-fieldset"
-              name="category"
-            >
+            <fieldset id="category-fieldset" name="category">
               {categories.map((category, index) => (
                 <div
                   className="category-item"
-                  id={`category-${category.replace(" ", "-").toLowerCase()}-div`}
+                  id={`category-${category
+                    .replace(" ", "-")
+                    .toLowerCase()}-div`}
                   key={`category-${category.replace(" ", "-").toLowerCase()}`}
                 >
                   <input
@@ -187,14 +186,14 @@ const EditSunscreen = (props) => {
             </fieldset>
           </div>
           <div className="button-container">
-            <button className="save-button" type="submit">
+            <button id="save-button" type="submit">
               Save
+            </button>
+            <button id="delete-button" type="button" onClick={handleDelete}>
+              Delete
             </button>
           </div>
         </form>
-        <button className="delete-button" onClick={handleDelete}>
-          Delete
-        </button>
       </div>
     </Layout>
   );
