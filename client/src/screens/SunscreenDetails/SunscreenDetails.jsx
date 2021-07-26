@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getOneSunscreen } from "../../services/sunscreens";
 import { Link, useParams } from "react-router-dom";
+import "./SunscreenDetails.css";
 import Layout from "../../components/Layout/Layout";
 
 const SunscreenDetail = (props) => {
@@ -22,36 +23,43 @@ const SunscreenDetail = (props) => {
           <h4>Loading!</h4>
         ) : (
           <div>
-            <img
-              className="sunscreen-detail-image"
-              src={sunscreen.imgURL}
-              alt={sunscreen.name}
-            />
             <div className="detail">
-              <div className="name">
-                <h2>{sunscreen.name}</h2>
+              <div className="leftSunDetails">
+                <div className="name">
+                  <h2>{sunscreen.name}</h2>
+                </div>
+                <div className="applyToAndSPF">
+                  <div className="applyto-info">
+                    <h2>
+                      Apply To: <span id="applyToSpan"> {sunscreen.applyTo}</span>
+                    </h2>
+                  </div>
+                  <div className="spf-info">
+                    <h2>SPF {sunscreen.SPF}</h2>
+                  </div>
+                </div>
+                <div className="category-info">
+                  <h2>{sunscreen.category.join(", ")}</h2>
+                </div>
+                {user ? (
+                  <div className="button-container">
+                    <Link
+                      className="edit-button"
+                      to={`/sunscreens/${sunscreen._id}/edit`}
+                    >
+                      Edit
+                    </Link>
+                  </div>
+                ) : null}
               </div>
-              <div className="applyto-info">
-                <h2>{sunscreen.applyTo}</h2>
+              <div className="rightSunDetails">
+                <img
+                  className="sunscreen-detailPage-image"
+                  src={sunscreen.imgURL}
+                  alt={sunscreen.name}
+                />
+                <h2 className="price-details">{`$${sunscreen.price}`}</h2>
               </div>
-              <div className="spf-info">
-                <h2>SPF {sunscreen.SPF}</h2>
-              </div>
-              <div className="category-info">
-                <h2>{sunscreen.category.join(", ")}</h2>
-              </div>
-              <div className="price">
-                <h2>{`$${sunscreen.price}`}</h2>
-              </div>
-              {user? (
-              <div className="button-container">
-                <Link
-                  className="edit-button"
-                  to={`/sunscreens/${sunscreen._id}/edit`}
-                >
-                  Edit
-                </Link>
-              </div>): null}
             </div>
           </div>
         )}
