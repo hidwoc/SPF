@@ -8,6 +8,7 @@ button {
   font-family: "Stylish", sans-serif;
   padding: 5px 15px;
   border: transparent 2px;
+  font-size: 28px;
 }
 
 .form-container {
@@ -16,6 +17,8 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 30px;
+  /* margin: 100px auto; */
 }
 
 form {
@@ -25,12 +28,14 @@ form {
 }
 
 input {
-  margin: 10px;
+  margin: 20px;
   border-radius: 20px;
   border: transparent 2px;
-  height: 30px;
+  height: 34px;
   text-align: center;
   font-family: "Stylish", sans-serif;
+  font-size: 28px;
+  padding: 0 15px;
 }
 ::placeholder {
   color: #c4c4c4;
