@@ -126,7 +126,7 @@ form input {
   order: 6;
   text-align: center;
 }
-.add-button {
+#add-button {
   background: #f7ea0b;
   margin-top: 10px;
 }
