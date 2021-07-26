@@ -28,7 +28,7 @@ a {
 }
 .sunscreen-card:hover{
   transform: scale(1.01);
-  opacity: 0.9;
+ 
 }
 
 .allTheScreens{
@@ -51,7 +51,7 @@ a {
   width: 100%;
   height: 60px;
   object-fit: cover;
-  background: #ffb899bf;
+  background: #ffb899;
   border-radius: 0px 0px 20px 20px;
   font-size: 28px;
   
