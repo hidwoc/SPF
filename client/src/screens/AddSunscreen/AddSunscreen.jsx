@@ -161,8 +161,8 @@ const AddSunscreen = (props) => {
               ))}
             </fieldset>
           </div>
-          <div className="button-container" id="add-container">
-            <button className="add-button" type="submit">
+          <div className="button-container">
+            <button id="add-button" type="submit">
               Add Sunscreen
             </button>
           </div>
