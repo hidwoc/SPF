@@ -1,0 +1,139 @@
+.form-container {
+  background: rgba(255,183,153, .8);
+  box-sizing: border-box;;
+  margin: 100px auto;
+  padding: 40px;
+  width: 75vw;
+  font-size: 30px;
+}
+
+form {
+  margin: auto;
+}
+
+form label {
+  width: 20%;
+  text-align: center;
+}
+
+form input {
+  background: rgb(255, 255, 255);
+  font-size: 28px;
+  height: 34px;
+  margin: 0 10px;
+  padding: 0 15px;
+  text-align: left;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#name {
+  order: 1;
+}
+#name input{
+  width: 80%;
+}
+
+.numbers-container {
+  align-self: flex-end;
+  order: 2;
+  display: flex;
+  /* TODO media query to 2 rows */
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.numbers-container input {
+  width: 40%;
+}
+
+#spf label {
+  width: 40%;
+}
+#spf input {
+  width: 60%;
+  margin-right: 0;
+}
+
+#price label{
+  width: 40%;
+}
+#price input {
+  width: 60%;
+}
+
+#imgURL {
+  margin-top: 10px;
+  order: 4;
+}
+#imgURL label {
+  text-align: left;
+  width: 20%
+}
+#imgURL input {
+  width: 80%;
+}
+
+#applyTo {
+  margin: 10px 0 0;
+  order: 3;
+}
+#applyTo-fieldset{
+  display: flex;
+  border: none;
+}
+
+.radio-div {
+  display: flex;
+  align-items: center;
+}
+
+#category {
+  margin: 0 auto;
+  order: 5;
+}
+#category fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-item{
+  margin-left: 10px;
+  /* TODO media query to 2 columns */
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.category-item label {
+  width: 100%;
+}
+
+#category-sports-div {
+  width: 20%;
+}
+#category-kids-div {
+  width: 20%;
+}
+#category-sensitive-skin-div {
+  width: 40%;
+}
+
+.button-container {
+  margin-top: 15px;
+  order: 6;
+}
+.add-button {
+  background:  #F7EA0B;
+  margin-top: 10px;
+  font-size: 28px;
+}
+

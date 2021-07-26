@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import { createSunscreen } from "../../services/sunscreens";
 import { categories } from "../../utils/categories";
+import "./AddSunscreen.css";
 
 const AddSunscreen = (props) => {
   const [sunscreen, setSunscreen] = useState({
@@ -58,7 +59,7 @@ const AddSunscreen = (props) => {
     <Layout user={props.user}>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <div className="input-name">
+          <div className="input-div" id="name">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -70,29 +71,31 @@ const AddSunscreen = (props) => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-spf">
-            <label htmlFor="spf">SPF:</label>
-            <input
-              type="text"
-              id="spf"
-              required
-              name="SPF"
-              value={sunscreen.SPF}
-              onChange={handleChange}
-            />
+          <div className="numbers-container">
+            <div className="input-div" id="spf">
+              <label htmlFor="spf">SPF:</label>
+              <input
+                type="text"
+                id="spf"
+                required
+                name="SPF"
+                value={sunscreen.SPF}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="input-div" id="price">
+              <label htmlFor="price">Price:</label>
+              <input
+                type="text"
+                id="price"
+                required
+                name="price"
+                value={sunscreen.price}
+                onChange={handleChange}
+              />
+            </div>
           </div>
-          <div className="input-price">
-            <label htmlFor="price">Price:</label>
-            <input
-              type="text"
-              id="price"
-              required
-              name="price"
-              value={sunscreen.price}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="input-imgURL">
+          <div className="input-div" id="imgURL">
             <label htmlFor="imgURL">Image URL:</label>
             <input
               type="text"
@@ -100,20 +103,20 @@ const AddSunscreen = (props) => {
               required
               accept="image" // accept image file type only
               name="imgURL"
+              placeholder="must be PNG file"
               value={sunscreen.imgURL}
               onChange={handleChange}
             />
           </div>
-          <div className="input-applyTo">
-            <label htmlFor="applyTo">Apply to:</label>
+          <div className="input-div" id="applyTo">
+            <label htmlFor="applyTo-fieldset">Apply to:</label>
             <fieldset
-              className="radio"
-              id="applyTo"
+              id="applyTo-fieldset"
               name="applyTo"
               value={sunscreen.applyTo}
               onChange={handleChange}
             >
-              <div id="applyTo-body">
+              <div className="radio-div" id="applyTo-body">
                 <input
                   type="radio"
                   name="applyTo"
@@ -123,24 +126,22 @@ const AddSunscreen = (props) => {
                 />
                 <label htmlFor="body">Body</label>
               </div>
-              <div id="applyTo-face">
+              <div className="radio-div" id="applyTo-face">
                 <input type="radio" name="applyTo" id="face" value="Face" />
                 <label htmlFor="face">Face</label>
               </div>
             </fieldset>
           </div>
-          <div className="input-category">
-            <label htmlFor="category">Category: </label>
+          <div className="input-div" id="category">
+            <label htmlFor="category-fieldset">Category: </label>
             <fieldset
-              className="checkbox"
-              id="category"
+              id="category-fieldset"
               name="category"
-              // value={sunscreen.category}
             >
               {categories.map((category, index) => (
                 <div
                   className="category-item"
-                  id={`category-${category.replace(" ", "-").toLowerCase()}`}
+                  id={`category-${category.replace(" ", "-").toLowerCase()}-div`}
                   key={`category-${category.replace(" ", "-").toLowerCase()}`}
                 >
                   <input
