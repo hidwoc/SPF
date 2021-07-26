@@ -1,6 +1,8 @@
-.form-container {
-  margin-top: 100px;
+#SignIn-container {
   background: rgba(115, 228, 253, 0.38);
-  margin-left: 20%;
-  margin-right: 20%;
+  text-align: center;
+}
+
+#SignIn-container input {
+  margin: 20px;
 }
