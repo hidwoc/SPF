@@ -59,7 +59,7 @@ const AddSunscreen = (props) => {
     <Layout user={props.user}>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <div className="input-name">
+          <div className="input-div" id="name">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -72,7 +72,7 @@ const AddSunscreen = (props) => {
             />
           </div>
           <div className="numbers-container">
-            <div className="input-spf">
+            <div className="input-div" id="spf">
               <label htmlFor="spf">SPF:</label>
               <input
                 type="text"
@@ -83,7 +83,7 @@ const AddSunscreen = (props) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="input-price">
+            <div className="input-div" id="price">
               <label htmlFor="price">Price:</label>
               <input
                 type="text"
@@ -95,7 +95,7 @@ const AddSunscreen = (props) => {
               />
             </div>
           </div>
-          <div className="input-imgURL">
+          <div className="input-div" id="imgURL">
             <label htmlFor="imgURL">Image URL:</label>
             <input
               type="text"
@@ -103,15 +103,15 @@ const AddSunscreen = (props) => {
               required
               accept="image" // accept image file type only
               name="imgURL"
+              placeholder="must be PNG file"
               value={sunscreen.imgURL}
               onChange={handleChange}
             />
           </div>
-          <div className="input-applyTo">
-            <label htmlFor="applyTo">Apply to:</label>
+          <div className="input-div" id="applyTo">
+            <label htmlFor="applyTo-fieldset">Apply to:</label>
             <fieldset
-              className="radio"
-              id="applyTo"
+              id="applyTo-fieldset"
               name="applyTo"
               value={sunscreen.applyTo}
               onChange={handleChange}
@@ -132,18 +132,16 @@ const AddSunscreen = (props) => {
               </div>
             </fieldset>
           </div>
-          <div className="input-category">
-            <label htmlFor="category">Category: </label>
+          <div className="input-div" id="category">
+            <label htmlFor="category-fieldset">Category: </label>
             <fieldset
-              className="checkbox"
-              id="category"
+              id="category-fieldset"
               name="category"
-              // value={sunscreen.category}
             >
               {categories.map((category, index) => (
                 <div
                   className="category-item"
-                  id={`category-${category.replace(" ", "-").toLowerCase()}`}
+                  id={`category-${category.replace(" ", "-").toLowerCase()}-div`}
                   key={`category-${category.replace(" ", "-").toLowerCase()}`}
                 >
                   <input
