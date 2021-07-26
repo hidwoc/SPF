@@ -16,8 +16,8 @@ const Welcome = (props) => {
           </div>
         </div>
         <div className="SunImg">
-            <img id="sun-image"></img>
-          </div>
+          <img id="sun-image"></img>
+        </div>
       </div>
     </Layout>
   );
