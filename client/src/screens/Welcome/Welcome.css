@@ -13,12 +13,13 @@
 }
 .WelcomeContainer h1 {
   font-family: "Pacifico", cursive;
+ 
 }
 .SunImg {
   float: right;
 }
 .WelcomePage {
-  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
