@@ -1,6 +1,7 @@
-.form-container {
+#SignUp-container {
   background: rgba(115, 228, 253, 0.38);
-  /* margin-left: 20%;
-  margin-right: 20%; */
-  margin: 100px auto;
+  text-align: center;
+}
+#SignUp-container input {
+  margin: 20px;
 }

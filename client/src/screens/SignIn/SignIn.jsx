@@ -55,7 +55,7 @@ const SignIn = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container" id="SignIn-container">
         <h3>Welcome Back!</h3>
         <h3>Sign In</h3>
         <form onSubmit={onSignIn}>
