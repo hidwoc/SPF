@@ -101,32 +101,61 @@ form input {
   width: 80%;
 }
 .category-item {
-  margin-left: 10px;
-  /* TODO media query to 2 columns */
-  width: 30%;
+  margin-left: 15px;
   display: flex;
   align-items: center;
 }
 .category-item label {
   padding-left: 5px;
   text-align: left;
-  width: 100%;
-}
-#category-sports-div {
-  width: 20%;
-}
-#category-kids-div {
-  width: 20%;
-}
-#category-sensitive-skin-div {
-  width: 40%;
+  width: 100%; 
 }
 
 .button-container {
   order: 6;
   text-align: center;
+  margin-top: 10px;
 }
 #add-button {
   background: #f7ea0b;
-  margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .add-edit {
+    padding: 20px 20px 20px 10px;
+  }
+  .numbers-container {
+    flex-direction: column;
+  }
+  #spf {
+    width: 100%;
+  }
+  #spf label {
+    width: 20%;
+  }
+  #spf input {
+    width: 80%;
+  }
+  #price {
+    width: 100%;
+  }
+  #price label {
+    width: 20%;
+  }
+  #price input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #category {
+    display: flex;
+    justify-content: space-between;
+  }
+  #category fieldset {
+    width: 65%;
+  }
+  .category-item {
+    width: 100%;
+  }
 }
