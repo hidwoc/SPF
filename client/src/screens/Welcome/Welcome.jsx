@@ -11,7 +11,7 @@ const Welcome = (props) => {
             <h3>
               Whether you’re having fun at the beach or just out running
               errands, applying sunblock regularly protects your skin from
-              harmful UV rays.<br/> Browse the collection and select the sunscreen
+              harmful UV rays.<br/><br/> Browse the collection and select the sunscreen
               that fits your day!
             </h3>
           </div>
