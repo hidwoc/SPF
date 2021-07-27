@@ -131,7 +131,6 @@ form input {
   box-sizing: border-box;
 }
 #add-button:hover{
-  transform: scale(1.01);
   color: white;
   border: solid 2px white;
   box-sizing: border-box;
