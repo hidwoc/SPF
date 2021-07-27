@@ -3,7 +3,7 @@
 .WelcomeContainer {
   background: rgba(255, 183, 153, 0.82);
   border-radius: 70px;
-  width: 50%;
+  width: 60%;
   text-align: center;
   height: 300px;
   display: flex;
@@ -13,10 +13,10 @@
 }
 .WelcomeContainer h1 {
   font-family: "Pacifico", cursive;
- 
 }
 .SunImg {
   float: right;
+  margin-right: 70px;
 }
 .WelcomePage {
   padding-top: 100px;
@@ -24,5 +24,10 @@
   justify-content: space-between;
 }
 #sun-image {
-  background-image: url("sun.png");
+  width: 300px;
+}
+.SunImg h1{
+    text-align: center;
+    margin: -54%;
+    font-size: 13px;
 }
