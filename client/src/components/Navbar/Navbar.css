@@ -5,7 +5,7 @@ nav {
   align-items: center;
   min-height: 40px;
   height: 7vh;
-  width: 100vw;
+  width: 100%;
   top: 0;
   position: fixed;
   z-index: 2;
@@ -22,7 +22,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -41,17 +41,26 @@ nav a {
   align-items: center;
   font-size: 24px;
 }
-
-#hamburger-logo {
+/* 
+#hamburger-div {
   display: none;
-}
+}  */
 
 @media screen and (max-width: 600px) {
-  .links {
-    display: none;
+  .navbar {
+    margin: 0 15px;
   }
-  #hamburger-logo {
-    display: inline;
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 140px;
+    min-width: 120px;
+    width: 10vw;
+  }
+  #hamburger-div {
+    color: #015687;
+    display: block;
     padding-right: 15px;
   }
 }

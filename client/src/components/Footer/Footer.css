@@ -5,6 +5,6 @@ footer {
   color: #015687;
   position: fixed;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
 }
