@@ -44,7 +44,6 @@ form input {
   align-self: flex-end;
   order: 2;
   display: flex;
-  /* TODO media query to 2 rows */
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
