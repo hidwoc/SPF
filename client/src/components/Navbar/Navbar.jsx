@@ -35,6 +35,13 @@ const Navbar = ({ user }) => {
         <div className="welcome">
           <Link to="/">SPF</Link>
         </div>
+        <div id="hamburger-div">
+          <i
+            className="fa fa-bars"
+            id="hamburger-logo"
+            onclick={() => setHamburger(!hamburger)}
+          ></i>
+        </div>
         {/* if hamburger is toggled on: display flex column, hamburger toggle off is display none */}
         {/* under 600px, visible=false & hamburger=false so links are diplay none*/}
         {/* visible=false & toggle hamburger=true so links are display flex */}
@@ -53,13 +60,6 @@ const Navbar = ({ user }) => {
           )}
         </div>
         {/* <a href="javascript:void(0);"  className="icon"> */}
-        {/* <div id="hamburger-div">
-          <i
-            className="fa fa-bars"
-            id="hamburger-logo"
-            onclick={() => setHamburger(!hamburger)}
-          ></i>
-        </div> */}
         {/* </a> */}
       </div>
     </nav>
