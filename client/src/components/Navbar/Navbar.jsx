@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = ({ user }) => {
 
   const toggleHamburger = () => {
-    null
+    return null
   }
 
   return (
