@@ -22,8 +22,13 @@ const Navbar = ({ user }) => {
           )}
         </div>
       </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   );
 };
 
 export default Navbar;
+
+// Hamburger Menu HTML&CSS from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
