@@ -6,10 +6,10 @@ const getToken = () => {
   });
 };
 const api = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "production"
-      ? `https://serene-earth-24708.herokuapp.com/api`
-      : `http://localhost:3000/api`,
+  baseURL: `https://serene-earth-24708.herokuapp.com/api`
+    // process.env.NODE_ENV === "production"
+    //   ? `https://serene-earth-24708.herokuapp.com/api`
+    //   : `http://localhost:3000/api`,
 });
 api.interceptors.request.use(
   async function (config) {
