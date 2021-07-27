@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = ({ user }) => {
+
+  const toggleHamburger = () => {
+    null
+  }
+
   return (
     <nav>
       <div className="navbar">
@@ -22,7 +27,7 @@ const Navbar = ({ user }) => {
           )}
         </div>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" id="hamburger-logo" class="icon" onclick="toggleHamburger()">
         <i class="fa fa-bars"></i>
       </a>
     </nav>

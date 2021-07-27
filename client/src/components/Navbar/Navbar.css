@@ -41,3 +41,18 @@ nav a {
   align-items: center;
   font-size: 24px;
 }
+
+#hamburger-logo {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  #hamburger-logo {
+    display: inline;
+    padding-right: 15px;
+  }
+}
+
