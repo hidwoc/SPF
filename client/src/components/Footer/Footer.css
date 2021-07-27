@@ -6,4 +6,5 @@ footer {
   position: fixed;
   text-align: center;
   width: 100vw;
+  z-index: 2;
 }

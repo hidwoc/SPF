@@ -17,6 +17,10 @@ form input {
   color: #015687;
 }
 
+.add-edit form {
+  box-sizing: border-box;
+}
+
 .add-edit input {
   text-align: left;
 }
@@ -26,6 +30,7 @@ form input {
   align-items: center;
   margin: 15px 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #name {
@@ -39,9 +44,9 @@ form input {
   align-self: flex-end;
   order: 2;
   display: flex;
-  /* TODO media query to 2 rows */
   justify-content: space-between;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .numbers-container input {
@@ -116,10 +121,18 @@ form input {
   order: 6;
   text-align: center;
   margin-top: 10px;
+  height: 50px; 
+  box-sizing: border-box;
 }
 #add-button {
   background: #f7ea0b;
   color: #015687;
+  box-sizing: border-box;
+}
+#add-button:hover{
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 780px) {

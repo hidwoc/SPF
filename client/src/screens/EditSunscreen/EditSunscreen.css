@@ -1,11 +1,26 @@
+.inner-button-container {
+  width: 160px;
+  height: 60px;
+}
+
 #save-button {
   background-color: #f7ea0b;
   color: #015687;
   margin: 0 30px;
+}
+#save-button:hover{
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
 }
 
 #delete-button {
   background-color: #e8703e;
   color: white;
   margin: 0 30px;
+}
+#delete-button:hover{
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
 }

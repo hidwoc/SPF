@@ -134,14 +134,13 @@ const AddSunscreen = (props) => {
           </div>
           <div className="input-div" id="category">
             <label htmlFor="category-fieldset">Category: </label>
-            <fieldset
-              id="category-fieldset"
-              name="category"
-            >
+            <fieldset id="category-fieldset" name="category">
               {categories.map((category, index) => (
                 <div
                   className="category-item"
-                  id={`category-${category.replace(" ", "-").toLowerCase()}-div`}
+                  id={`category-${category
+                    .replace(" ", "-")
+                    .toLowerCase()}-div`}
                   key={`category-${category.replace(" ", "-").toLowerCase()}`}
                 >
                   <input

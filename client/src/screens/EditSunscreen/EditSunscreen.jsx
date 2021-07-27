@@ -186,12 +186,16 @@ const EditSunscreen = (props) => {
             </fieldset>
           </div>
           <div className="button-container">
-            <button id="save-button" type="submit">
-              Save
-            </button>
-            <button id="delete-button" type="button" onClick={handleDelete}>
-              Delete
-            </button>
+            <div className="inner-button-container">
+              <button id="save-button" type="submit">
+                Save
+              </button>
+            </div>
+            <div className="inner-button-container">
+              <button id="delete-button" type="button" onClick={handleDelete}>
+                Delete
+              </button>
+            </div>
           </div>
         </form>
       </div>

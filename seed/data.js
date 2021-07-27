@@ -33,7 +33,7 @@ const insertData = async () => {
       SPF: "50",
       price: "15.55",
       imgURL:
-        "https://w7.pngwing.com/pngs/959/776/png-transparent-sunscreen-nivea-sun-after-sun-moisture-soothing-lotion-factor-de-proteccion-solar-kids-swimming-pool-thumbnail.png",
+        "https://images-us.nivea.com/-/media/media-center-items/a/6/b/201744-original.png",
       applyTo: "Body",
       category: ["Kids"],
     },
@@ -42,7 +42,7 @@ const insertData = async () => {
       SPF: "50",
       price: "9.99",
       imgURL:
-        "https://w7.pngwing.com/pngs/562/224/png-transparent-sunscreen-hawaiian-tropic-silk-hydration-after-sun-lotion-hawaiian-tropic-silk-hydration-after-sun-lotion-factor-de-proteccion-solar-body-skin-cream-sunscreen-sun-tanning-thumbnail.png",
+        "https://bysabys.files.wordpress.com/2017/05/ht-06.png",
       applyTo: "Body",
       category: ["Sensitive Skin", "Every Day"],
     },
@@ -51,7 +51,7 @@ const insertData = async () => {
       SPF: "50",
       price: "36.00",
       imgURL:
-        "https://w7.pngwing.com/pngs/691/418/png-transparent-sunscreen-dermalogica-age-smart-dynamic-skin-recovery-factor-de-proteccion-solar-sport-others-cream-sport-cosmetics-thumbnail.png",
+        "https://www.zestbeauty.com/media/catalog/product/cache/dbed8eb2cced7e946cc3da7fa2f43b7f/d/e/dermalogica-protection-50-sport.png",
       applyTo: "Body",
       category: ["Sports", "Waterproof"],
     },
@@ -60,7 +60,7 @@ const insertData = async () => {
       SPF: "6",
       price: "8.99",
       imgURL:
-        "https://w7.pngwing.com/pngs/606/457/png-transparent-sunscreen-lotion-hawaiian-tropic-sun-tanning-factor-de-proteccion-solar-oil-miscellaneous-cream-perfume-thumbnail.png",
+        "https://www.hawaiiantropic.ca/images/default-source/default-album/08518_y000851801-ca-sc-ht-dark-tanning-oil-240ml_resize.png?sfvrsn=c26cebfc_0",
       applyTo: "Body",
       category: ["Tanning"],
     },
@@ -78,7 +78,7 @@ const insertData = async () => {
       SPF: "30",
       price: "14.99",
       imgURL:
-        "https://www.vhv.rs/dpng/d/456-4561058_neutrogena-ultra-sheer-clear-face-lotion-spf30-88ml.png",
+        "https://cdn.shopify.com/s/files/1/0010/9304/2228/products/ultra-sheer-clear-face-sunscreen-liquid-lotion-spf30_0_0_0.png?v=1538550869",
       applyTo: "Face",
       category: ["Every Day"],
     },

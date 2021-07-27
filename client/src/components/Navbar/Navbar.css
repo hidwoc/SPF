@@ -3,11 +3,12 @@ nav {
   box-shadow: 1px 1px 1px 1px #acabab3a;
   display: flex;
   align-items: center;
+  min-height: 40px;
   height: 7vh;
   width: 100vw;
   top: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav a {
@@ -40,3 +41,18 @@ nav a {
   align-items: center;
   font-size: 24px;
 }
+
+#hamburger-logo {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  #hamburger-logo {
+    display: inline;
+    padding-right: 15px;
+  }
+}
+
