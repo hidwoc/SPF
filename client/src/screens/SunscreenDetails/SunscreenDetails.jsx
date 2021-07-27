@@ -53,11 +53,13 @@ const SunscreenDetail = (props) => {
                 ) : null}
               </div>
               <div className="rightSunDetails">
+               <div className="detail-img">
                 <img
                   className="sunscreen-detailPage-image"
                   src={sunscreen.imgURL}
                   alt={sunscreen.name}
                 />
+                </div>
                 <h2 className="price-details">{`$${sunscreen.price}`}</h2>
               </div>
             </div>
