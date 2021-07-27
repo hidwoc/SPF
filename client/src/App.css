@@ -9,9 +9,13 @@ button {
   padding: 5px 15px;
   border: transparent 2px;
   font-size: 28px;
+  box-sizing: border-box;
 }
 button:hover{
   transform: scale(1.01);
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
 }
 
 .form-container {
