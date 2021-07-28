@@ -15,13 +15,6 @@ const Sunscreens = (props) => {
     };
     fetchSunscreens();
   }, []);
-
-  // const defaultPic = () => {
-  //   props.imgURL.src = "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Cosmetic-PNG/Sunscreen_Tube_PNG_Clipart_Picture.png?m=1507172109"
-  //   props.imgURL.width = "300"
-  // }
-  // props.imgURL.onError = defaultPic;
-
   return (
     <Layout user={props.user}>
       <main>

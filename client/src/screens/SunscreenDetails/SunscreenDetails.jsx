@@ -27,7 +27,7 @@ const SunscreenDetail = (props) => {
     <Layout user={props.user}>
       <div className="sunscreen-detail">
         {!sunscreen ? (
-          <h4>Loading!</h4>
+          <h4 id="loading">Loading!</h4>
         ) : (
           <div>
             <div className="detail">
