@@ -62,7 +62,10 @@ nav a {
     color: #015687;
     display: inline;
     position: absolute;
-    right: 15px;
+    right: 20px;
+  }
+  #hamburger-logo {
+    transform: scale(1.5);
   }
 }
 

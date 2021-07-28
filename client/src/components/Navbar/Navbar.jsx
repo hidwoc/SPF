@@ -9,18 +9,15 @@ const Navbar = ({ user }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      // if we're at desktop size
-      if (window.innerWidth > 600) {
-        // make the nav visible
+      console.log(window.innerWidth)
+      if (window.innerWidth > 771) {
         setVisible(true);
-        // untoggle the hamburger menu
         setHamburger(false);
       } else {
-        // otherwise...
-        //   make the nav invisible
         setVisible(false);
       }
     };
+    handleResize();
     // add an event listener to the resize event on the window
     window.addEventListener("resize", handleResize);
     // unmounts we'll remove that event listener
@@ -62,4 +59,5 @@ const Navbar = ({ user }) => {
 
 export default Navbar;
 
-// Hamburger Menu HTML&CSS from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+// Hamburger Menu React&CSS from: https://git.generalassemb.ly/sei-nyc-flamingos/hamburger-time/blob/solution/src/components/Nav.jsx
+// Additional Hamburger Menu HTML&CSS from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
