@@ -41,10 +41,10 @@ nav a {
   align-items: center;
   font-size: 24px;
 }
-/* 
+
 #hamburger-div {
   display: none;
-}  */
+} 
 
 @media screen and (max-width: 600px) {
   .navbar {
@@ -60,9 +60,9 @@ nav a {
   }
   #hamburger-div {
     color: #015687;
-    /* display: block; */
-    margin-left: 100px;
-    z-index: 3;
+    display: inline;
+    position: absolute;
+    right: 15px;
   }
 }
 
