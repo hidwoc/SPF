@@ -20,50 +20,60 @@
 .SunImg {
   float: right;
   margin-right: 70px;
+  display: block;
 }
 .WelcomePage {
-  padding-top: 100px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 #sun-image {
   width: 300px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  outline: none;
 }
 .SunImg h1{
     text-align: center;
     margin: -54%;
     font-size: 13px;
 }
-h3{
+.WelcomeContainer h3{
     padding-left: 60px;
     padding-right: 60px;
     font-size: 25px;
 }
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1270px) {
     .WelcomeContainer{
         margin: auto;
         width: 90%;
+        margin-left: 4%;
      }
      .WelcomeContainer h1 {
          font-family: "Pacifico", cursive;
-         font-size: 35px;
+         font-size: 40px;
          color: rgba(255, 0, 0, 0.781);
          
        }
       .WelcomeContainer h3{
         font-size:19px;
-        padding: 6px;
+        padding: 10px;
+        font-size: 26px;
+
     }
        .SunImg {
-        margin-left: 14%;
-        margin-top: 25px;
+        margin-left: 40%;
+        margin-top: 15px;
+        width: 20px;
 
       }
-      #sun-img{
-          margin-top: 90%;
+      .SunImg h1{
+          padding-left: 25vh;
       }
       .WelcomePage{
           flex-direction: column;
+          
       }
   }

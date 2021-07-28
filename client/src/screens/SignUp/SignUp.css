@@ -20,3 +20,38 @@
   background-color: #73e4fd;
   color: #015687;
 }
+@media screen and (max-width: 1153px) {
+  #SignUp-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 848px) {
+  #SignUp-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 598px) {
+  #SignUp-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 452px) {
+  #SignUp-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 390px) {
+  #SignUp-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #SignUp-container input {
+    margin: 11px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

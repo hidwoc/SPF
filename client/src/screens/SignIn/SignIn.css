@@ -20,3 +20,44 @@
   background-color: #73e4fd;
   color: #015687;
 }
+@media screen and (max-width: 1153px) {
+  #SignIn-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #SignIn-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 848px) {
+  #SignIn-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 598px) {
+  #SignIn-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 452px) {
+  #SignIn-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 390px) {
+  #SignIn-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #SignIn-container input {
+    margin: 11px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
