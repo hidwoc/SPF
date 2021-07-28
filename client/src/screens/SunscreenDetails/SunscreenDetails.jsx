@@ -65,7 +65,7 @@ const SunscreenDetail = (props) => {
                       className="back-button"
                       to={`/sunscreens`}
                       >
-                      back
+                      Back
                     </Link>
                   </div>
                 ) : null}
