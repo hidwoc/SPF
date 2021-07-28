@@ -1,10 +1,10 @@
+/* GLOBAL */
 form label {
   padding-right: 15px;
   width: 20%;
   text-align: right;
 }
 
-/* GLOBAL */
 form input {
   background: rgb(255, 255, 255);
 }
@@ -138,6 +138,7 @@ form input {
 @media screen and (max-width: 780px) {
   .add-edit {
     padding: 20px 20px 20px 10px;
+    width: 90vw;
   }
   .numbers-container {
     flex-direction: column;
