@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+.WelcomePage {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
 .WelcomeContainer {
   background: rgba(255, 183, 153, 0.82);
   border-radius: 70px;
   width: 60%;
   text-align: center;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   flex-direction: row;
   color: white;
@@ -15,65 +20,80 @@
   font-family: "Pacifico", cursive;
   font-size: 40px;
   color: rgba(255, 0, 0, 0.781);
-  
+}
+.WelcomeContainer h3 {
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 25px;
 }
 .SunImg {
   float: right;
   margin-right: 70px;
   display: block;
-}
-.WelcomePage {
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 #sun-image {
   width: 300px;
   border-style: none;
   outline: none;
-  cursor: pointer;
-  outline: none;
 }
-.SunImg h1{
-    text-align: center;
-    margin: -54%;
-    font-size: 13px;
+#block-sun {
+  position: absolute;
+  right: 85px;
+  bottom: 91px;
 }
-.WelcomeContainer h3{
-    padding-left: 60px;
-    padding-right: 60px;
-    font-size: 25px;
+#block-sun h1 {
+  text-align: center;
+  display: inline-block;
+  margin: 50px auto;
+  z-index: -1;
+  font-size: 25px;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+#block-sun h1:hover {
+  color: red;
+  transform: scale(1.01);
 }
 
-  @media screen and (max-width: 1270px) {
-    .WelcomeContainer{
-        margin: auto;
-        width: 90%;
-        margin-left: 4%;
-     }
-     .WelcomeContainer h1 {
-         font-family: "Pacifico", cursive;
-         font-size: 40px;
-         color: rgba(255, 0, 0, 0.781);
-         
-       }
-      .WelcomeContainer h3{
-        font-size:19px;
-        padding: 10px;
-        font-size: 26px;
-
-    }
-       .SunImg {
-        margin-left: 40%;
-        margin-top: 15px;
-        width: 20px;
-
-      }
-      .SunImg h1{
-          padding-left: 25vh;
-      }
-      .WelcomePage{
-          flex-direction: column;
-          
-      }
+@media screen and (max-width: 1270px) {
+  .WelcomeContainer {
+    margin: auto;
+    width: 90%;
+    margin-left: 4%;
   }
+  .WelcomeContainer h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.781);
+  }
+  .WelcomeContainer h3 {
+    font-size: 19px;
+    padding: 10px;
+    font-size: 26px;
+  }
+  .SunImg {
+    margin: 20px auto;
+  }
+
+  .WelcomePage {
+    flex-direction: column;
+    margin-bottom: 130px;
+    padding-top: 12px;
+  }
+  #block-sun {
+    right: 73px;
+    bottom: 92px;
+  }
+  #block-sun h1 {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 771px) {
+  .WelcomeContainer h1 {
+    font-size: 32px;
+  }
+  .WelcomeContainer h3 {
+    font-size: 20px;
+  }
+}
