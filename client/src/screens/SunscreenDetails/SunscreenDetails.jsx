@@ -48,6 +48,7 @@ const SunscreenDetail = (props) => {
                 <div className="category-info">
                   <h2>{sunscreen.category.join(", ")}</h2>
                 </div>
+                <div className="detailedButtons">
                 {user ? (
                   <div className="button-container">
                     <Link
@@ -58,7 +59,18 @@ const SunscreenDetail = (props) => {
                     </Link>
                   </div>
                 ) : null}
-              </div>
+              {user ? (
+                <div className="back-button-container">
+                    <Link
+                      className="back-button"
+                      to={`/sunscreens`}
+                      >
+                      back
+                    </Link>
+                  </div>
+                ) : null}
+                </div>
+                </div>
               <div className="rightSunDetails">
                <div className="detail-img">
                 <img

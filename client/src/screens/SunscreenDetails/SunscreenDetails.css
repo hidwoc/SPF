@@ -10,19 +10,20 @@
   color: #015687;
   border-radius: 50px;
 }
+
+/*Left side of screen*/
 .leftSunDetails {
   display: flex;
   flex-direction: column;
   width: 65%;
   padding: 20px 10px 10px;
 }
-.rightSunDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 35%;
+.name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
 }
-
 .applyToAndSPF {
   display: flex;
   justify-content: space-evenly;
@@ -31,7 +32,6 @@
   font-style: normal;
   font-weight: normal;
 }
-
 #applyToSpan {
   margin-left: 15px;
   background-color: #ffc172;
@@ -39,13 +39,16 @@
   padding: 5px 15px;
   border: transparent 2px;
 }
-
-.edit-button {
-  background-color: #73e4fd;
-  border-radius: 10px;
-  padding: 5px 15px;
-  border: transparent 2px;
-  font-size: 28px;
+.category-info {
+  font-size: 25px;
+  text-align: center;
+}
+/* Right side of screen*/
+.rightSunDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
 }
 .sunscreen-detailPage-image {
   width: 400px;
@@ -59,21 +62,26 @@
   justify-content: center;
 }
 
-.name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  text-align: center;
-}
 .price-details {
   text-align: center;
   font-size: 28px;
   z-index: 1;
   margin-top: 0;
 }
-.category-info {
-  font-size: 25px;
-  text-align: center;
+
+/*buttons*/
+
+.detailedButtons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit-button {
+  background-color: #73e4fd;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border: transparent 2px;
+  font-size: 28px;
 }
 .edit-button:hover {
   transform: scale(1.01);
@@ -81,11 +89,33 @@
   border: solid 2px white;
   box-sizing: border-box;
 }
-
 .button-container {
   display: flex;
   justify-content: center;
+  width: 73.91px;
 }
+.back-button {
+  display: flex;
+  align-items: center;
+  background-color: #73e4fd;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border:  2px;
+  font-size: 28px;
+}
+.back-button:hover {
+  transform: scale(1.01);
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
+}
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* loading h4 */
 #loading{
   display: flex;
   justify-content: center;
@@ -149,6 +179,14 @@
     font-size: 25px;
   }
   .button-container{
+    margin-top: 50px;
+  }
+
+  .back-button {
+    padding: 5px 15px;
+    font-size: 25px;
+  }
+  .back-button-container{
     margin-top: 50px;
   }
   
