@@ -17,12 +17,14 @@ const Welcome = (props) => {
           </div>
         </div>
         <div className="SunImg">
-          <img
+        <Link to="./sunscreens"><img
             alt="img"
             id="sun-image"
             src={require("./sun.png").default}
           ></img>
-          <Link to="./sunscreens"><h1>Block the Sun</h1></Link>
+          <h1>Block the Sun</h1>
+          </Link>
+        
         </div>
       </div>
     </Layout>
