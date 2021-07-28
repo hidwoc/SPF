@@ -145,14 +145,14 @@ const EditSunscreen = (props) => {
                 <input
                   type="radio"
                   name="applyTo"
+                  checked={sunscreen.applyTo==="Body"}
                   id="body"
                   value="Body"
-                  defaultChecked
                 />
                 <label htmlFor="body">Body</label>
               </div>
               <div className="radio-div" id="applyTo-face">
-                <input type="radio" name="applyTo" id="face" value="Face" />
+                <input type="radio" name="applyTo" checked={sunscreen.applyTo==="Face"} id="face" value="Face" />
                 <label htmlFor="face">Face</label>
               </div>
             </fieldset>
