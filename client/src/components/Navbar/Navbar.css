@@ -50,11 +50,15 @@ nav a {
   .navbar {
     margin: 0 15px;
   }
+  .active {
+    height: 100px;
+  }
   .links {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 140px;
+    margin-top: 2px;
+    margin-right: 35px;
     min-width: 120px;
     width: 10vw;
   }
@@ -63,9 +67,14 @@ nav a {
     display: inline;
     position: absolute;
     right: 20px;
+    top: 10px;
   }
   #hamburger-logo {
     transform: scale(1.5);
+    margin-top: 10px;
+  }
+  #close-hamburger {
+    font-size: 25px;
   }
 }
 

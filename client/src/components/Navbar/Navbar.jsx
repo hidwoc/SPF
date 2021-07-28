@@ -16,6 +16,7 @@ const Navbar = ({ user }) => {
         setVisible(false);
       }
     };
+    handleResize();
     // add an event listener to the resize event on the window
     window.addEventListener("resize", handleResize);
     // unmounts we'll remove that event listener
@@ -25,19 +26,28 @@ const Navbar = ({ user }) => {
   }, []);
 
   return (
-    <nav>
+    <nav className={hamburger ? "active" : null}>
       <div className="navbar">
         <div className="welcome">
           <Link to="/">SPF</Link>
         </div>
         <div id="hamburger-div">
-          <i
-            className="fa fa-bars"
-            id="hamburger-logo"
-            onClick={() => setHamburger(!hamburger)}
-          ></i>
+          {hamburger ? (
+            <div id="close-hamburger" onClick={() => setHamburger(!hamburger)}>
+              X
+            </div>
+          ) : (
+            <i
+              className="fa fa-bars"
+              id="hamburger-logo"
+              onClick={() => setHamburger(!hamburger)}
+            ></i>
+          )}
         </div>
-        <div className="links" style={{ display: visible || hamburger ? "flex" : "none" }} >
+        <div
+          className="links"
+          style={{ display: visible || hamburger ? "flex" : "none" }}
+        >
           <Link to="/sunscreens">SUNSCREENS</Link>
           {user ? (
             <Link to="/add-sunscreen">ADD NEW</Link>
