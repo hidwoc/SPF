@@ -8,14 +8,21 @@ const SunscreenDetail = (props) => {
   const { user } = props;
   const [sunscreen, setSunscreen] = useState("");
   const { id } = useParams();
+  const [image, setImage] = useState("");
 
   useEffect(() => {
     const fetchSunscreen = async () => {
       const sunscreen = await getOneSunscreen(id);
       setSunscreen(sunscreen);
+      setImage(sunscreen.imgURL);
     };
     fetchSunscreen();
   }, [id]);
+  const handleError = () => {
+    setImage(
+      "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Cosmetic-PNG/Sunscreen_Tube_PNG_Clipart_Picture.png?m=1507172109"
+    );
+  };
   return (
     <Layout user={props.user}>
       <div className="sunscreen-detail">
@@ -56,8 +63,9 @@ const SunscreenDetail = (props) => {
                <div className="detail-img">
                 <img
                   className="sunscreen-detailPage-image"
-                  src={sunscreen.imgURL}
+                  src={image}
                   alt={sunscreen.name}
+                  onError={handleError}
                 />
                 </div>
                 <h2 className="price-details">{`$${sunscreen.price}`}</h2>
@@ -71,3 +79,6 @@ const SunscreenDetail = (props) => {
 };
 
 export default SunscreenDetail;
+
+
+//on Error code source from  https://stackoverflow.com/questions/34097560/react-js-replace-img-src-onerror
