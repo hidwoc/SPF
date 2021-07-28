@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+.WelcomePage {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
 .WelcomeContainer {
   background: rgba(255, 183, 153, 0.82);
   border-radius: 70px;
   width: 60%;
   text-align: center;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
   flex-direction: row;
   color: white;
@@ -16,10 +21,10 @@
   font-size: 40px;
   color: rgba(255, 0, 0, 0.781);
 }
-.WelcomePage {
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-evenly;
+.WelcomeContainer h3 {
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 25px;
 }
 .SunImg {
   float: right;
@@ -51,12 +56,6 @@
   transform: scale(1.01);
 }
 
-.WelcomeContainer h3 {
-  padding-left: 60px;
-  padding-right: 60px;
-  font-size: 25px;
-}
-
 @media screen and (max-width: 1270px) {
   .WelcomeContainer {
     margin: auto;
@@ -80,6 +79,7 @@
   .WelcomePage {
     flex-direction: column;
     margin-bottom: 130px;
+    padding-top: 12px;
   }
   #block-sun {
     right: 73px;
@@ -87,5 +87,13 @@
   }
   #block-sun h1 {
     width: 150px;
+  }
+}
+@media screen and (max-width: 771px) {
+  .WelcomeContainer h1 {
+    font-size: 32px;
+  }
+  .WelcomeContainer h3 {
+    font-size: 20px;
   }
 }
