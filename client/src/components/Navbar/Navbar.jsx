@@ -9,7 +9,6 @@ const Navbar = ({ user }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      console.log(window.innerWidth)
       if (window.innerWidth > 771) {
         setVisible(true);
         setHamburger(false);
@@ -17,7 +16,6 @@ const Navbar = ({ user }) => {
         setVisible(false);
       }
     };
-    handleResize();
     // add an event listener to the resize event on the window
     window.addEventListener("resize", handleResize);
     // unmounts we'll remove that event listener
