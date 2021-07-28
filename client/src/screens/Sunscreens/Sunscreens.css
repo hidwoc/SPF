@@ -2,14 +2,16 @@ a {
   text-decoration: none;
   color: #015687;
 }
-.sunscreen-name{
-  
+.sunscreen-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 28px;
   padding: 17px 17px 0;
+  margin-top: 20px;
   max-height: 35px;
   z-index: 1;
-  
 }
 .sunscreen-card {
   display: flex;
@@ -22,27 +24,25 @@ a {
   background-color: rgba(255, 255, 255, 0.338);
   border-radius: 20px;
   box-sizing: border-box;
-    
 }
-.sunscreen-card:hover{
+.sunscreen-card:hover {
   transform: scale(1.01);
 }
 
-.allTheScreens{
-  
+.allTheScreens {
   width: 90vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
 }
-.sunscreen-card-image{
+.sunscreen-card-image {
   width: 300px;
   height: 300px;
   object-fit: contain;
   margin-top: 20px;
 }
-.price{
+.price {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,5 +52,22 @@ a {
   background: #ffb899;
   border-radius: 0px 0px 20px 20px;
   font-size: 28px;
-  
+}
+
+@media screen and (max-width: 500px){
+  main{
+    display: flex;
+    justify-content: center;
+  }
+  .cardLink{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  .allTheScreens{
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
 }

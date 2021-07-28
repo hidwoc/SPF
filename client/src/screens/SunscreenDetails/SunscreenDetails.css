@@ -7,21 +7,22 @@
   left: 165px;
   top: 138px;
   background: rgba(195, 252, 241, 0.74);
-   color: #015687;
+  color: #015687;
   border-radius: 50px;
-  
 }
+
+/*Left side of screen*/
 .leftSunDetails {
   display: flex;
   flex-direction: column;
   width: 65%;
   padding: 20px 10px 10px;
 }
-.rightSunDetails {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  
+.name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
 }
 .applyToAndSPF {
   display: flex;
@@ -31,14 +32,48 @@
   font-style: normal;
   font-weight: normal;
 }
-
-#applyToSpan{
+#applyToSpan {
   margin-left: 15px;
-  background-color: #FFC172;
+  background-color: #ffc172;
   border-radius: 10px;
   padding: 5px 15px;
   border: transparent 2px;
-  
+}
+.category-info {
+  font-size: 25px;
+  text-align: center;
+}
+/* Right side of screen*/
+.rightSunDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+}
+.sunscreen-detailPage-image {
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  max-height: 90%;
+  object-fit: contain;
+}
+.detail-img {
+  display: flex;
+  justify-content: center;
+}
+
+.price-details {
+  text-align: center;
+  font-size: 28px;
+  z-index: 1;
+  margin-top: 0;
+}
+
+/*buttons*/
+
+.detailedButtons{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .edit-button {
@@ -48,53 +83,52 @@
   border: transparent 2px;
   font-size: 28px;
 }
-.edit-button:hover{
+.edit-button:hover {
+  transform: scale(1.01);
+  color: white;
+  border: solid 2px white;
+  box-sizing: border-box;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 73.91px;
+}
+.back-button {
+  display: flex;
+  align-items: center;
+  background-color: #73e4fd;
+  border-radius: 10px;
+  padding: 5px 15px;
+  border:  2px;
+  font-size: 28px;
+}
+.back-button:hover {
   transform: scale(1.01);
   color: white;
   border: solid 2px white;
   box-sizing: border-box;
 }
 
-.button-container {
+.back-button-container {
   display: flex;
   justify-content: center;
 }
-.sunscreen-detailPage-image {
 
-  width: 400px;
-  height: 450px;
-  margin: auto;
-  max-height: 90%;
-}
-
-.name{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  text-align: center;
-}
-.price-details {
-  text-align: center;
-  font-size: 28px;
-  z-index: 1;
-  margin-top: 0;
-}
-.category-info{
-  font-size: 25px;
-  text-align: center;
-}
-
-@media screen and (max-width: 550px){
+/* loading h4 */
+#loading{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #015687;
   
+}
 
+@media screen and (max-width: 600px) {
   .detail {
-    margin: auto;
-    /* width: 344px; */
     padding: 10px;
-    /* height: 391px; */
-    margin-top: 150px;
-    
-
+    margin-top: 95px;
+    margin-bottom: 25px;
   }
 
   .leftSunDetails {
@@ -107,61 +141,82 @@
     display: flex;
     flex-direction: column;
     width: 35%;
-    
+    position: relative;
   }
-  
+
   .applyToAndSPF {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     font-size: 18px;
     font-style: normal;
     font-weight: normal;
   }
-  
-  #applyToSpan{
+  .spf-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .applyto-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 auto;
+    width: 103px;
+  }
+
+  #applyToSpan {
     margin-left: 15px;
-    background-color: #FFC172;
+    background-color: #ffc172;
     border-radius: 10px;
     padding: 5px 15px;
     border: transparent 2px;
-    
   }
   
   .edit-button {
-
     padding: 5px 15px;
     font-size: 25px;
   }
+  .button-container{
+    margin-top: 50px;
+  }
 
-
-
-  .sunscreen-detailPage-image {
-  
-    width: 150px;
-    object-fit: contain;
-    /* height: 100%; */
-    margin: 0 auto;
-    /* margin-top: 100px;
-    max-height: 90%; */
+  .back-button {
+    padding: 5px 15px;
+    font-size: 25px;
+  }
+  .back-button-container{
+    margin-top: 50px;
   }
   
-  .name{
+  .sunscreen-detailPage-image {
+    max-width: 150px;
+    min-width: 120px;
+    max-height: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .name {
     font-size: 20px;
     text-align: center;
     margin-top: 50px;
   }
- 
+
   .price-details {
     text-align: center;
-    font-size: 19px;
+    font-size: 28px;
     z-index: 1;
-    margin-top: 0;
+    position: absolute;
+    bottom: 55px;
+    margin: 0 auto;
+    left: 28px;
   }
-  
-  .category-info{
+
+  .category-info {
     font-size: 19px;
     text-align: center;
-  } 
-
+  }
 }
+

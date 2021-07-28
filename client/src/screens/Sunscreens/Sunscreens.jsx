@@ -15,7 +15,6 @@ const Sunscreens = (props) => {
     };
     fetchSunscreens();
   }, []);
-
   return (
     <Layout user={props.user}>
       <main>

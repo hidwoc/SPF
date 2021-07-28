@@ -11,8 +11,10 @@ const Welcome = (props) => {
             <h3>
               Whether you’re having fun at the beach or just out running
               errands, applying sunblock regularly protects your skin from
-              harmful UV rays.<br/> Browse the collection and select the sunscreen
-              that fits your day!
+              harmful UV rays.
+              <br />
+              <br /> Browse the collection and select the sunscreen that fits
+              your day!
             </h3>
           </div>
         </div>
@@ -22,7 +24,12 @@ const Welcome = (props) => {
             id="sun-image"
             src={require("./sun.png").default}
           ></img>
-          <Link to="./sunscreens"><h1>Block the Sun</h1></Link>
+
+          <Link to="./sunscreens">
+            <div id="block-sun">
+              <h1>Block the Sun</h1>
+            </div>
+          </Link>
         </div>
       </div>
     </Layout>
