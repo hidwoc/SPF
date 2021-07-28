@@ -54,6 +54,6 @@ input {
   }
   .form-container {
     font-size: 25px;
-    margin: 15px auto;
+    margin: 15px auto 40px;
   }
 }
