@@ -79,19 +79,19 @@ category: ["Kids"],
 
 | Component              | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
-| Sunblock Research      |    H     |      1hrs      |      N/A      |    1hour    |
-| Schema- Models set up  |    H     |      2hrs      |      N/A      |    1hour    |
-| Routes set up          |    H     |      2hrs      |      N/A      |    2hour    |
-| Controller set up      |    H     |      3hrs      |      N/A      |    1hour    |
-| Database Testing       |    H     |      1hrs      |      N/A      |   1 hour    |
-| React Skeleton         |    H     |      3hrs      |      N/A      |   3hours    |
-| Screens and Components |    H     |      3hrs      |      N/A      |   3hours    |
-| Services               |    H     |      2hrs      |      N/A      |    1hour    |
-| CSS                    |    H     |      8hrs      |      N/A      |   8hours    |
-| Media query            |    H     |      7hrs      |      N/A      |   7hours    |
-| Debugging              |    H     |      3hrs      |      N/A      |   3hours    |
-| Pull Request reviews   |    H     |      3hrs      |      N/A      |   2hours    |
-| Total                  |    H     |     38hrs      |      N/A      |   33hours   |
+| Sunblock Research      |    H     |      1hrs      |      N/A      |    1hrs     |
+| Schema- Models set up  |    H     |      2hrs      |      N/A      |    1hrs     |
+| Routes set up          |    H     |      2hrs      |      N/A      |    2hrs     |
+| Controller set up      |    H     |      3hrs      |      N/A      |    1hrs     |
+| Database Testing       |    H     |      1hrs      |      N/A      |    1hrs     |
+| React Skeleton         |    H     |      3hrs      |      N/A      |    3hrs     |
+| Screens and Components |    H     |      3hrs      |      N/A      |    3hrs     |
+| Services               |    H     |      2hrs      |      N/A      |    1hrs     |
+| CSS                    |    H     |      8hrs      |      N/A      |    8hrs     |
+| Media query            |    H     |      7hrs      |      N/A      |    7hrs     |
+| Debugging              |    H     |      3hrs      |      N/A      |    3hrs     |
+| Pull Request reviews   |    H     |      3hrs      |      N/A      |    2hrs     |
+| Total                  |    H     |     38hrs      |      N/A      |   33hrs     |
 
 ## Technologies Used:
 
