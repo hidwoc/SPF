@@ -89,3 +89,4 @@ const SunscreenDetail = (props) => {
 export default SunscreenDetail;
 
 //on Error code source from  https://stackoverflow.com/questions/34097560/react-js-replace-img-src-onerror
+ 
