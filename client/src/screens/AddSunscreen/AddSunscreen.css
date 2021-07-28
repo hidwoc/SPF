@@ -118,11 +118,13 @@ form input {
 }
 
 .button-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 50px; 
+  margin-top: 10px;
   order: 6;
   text-align: center;
-  margin-top: 10px;
-  height: 50px; 
-  box-sizing: border-box;
 }
 #add-button {
   background: #f7ea0b;
