@@ -74,6 +74,7 @@
 .detailedButtons{
   display: flex;
   justify-content: space-evenly;
+  height: 50px;
 }
 
 .edit-button {
@@ -84,12 +85,11 @@
   font-size: 28px;
 }
 .edit-button:hover {
-  transform: scale(1.01);
   color: white;
   border: solid 2px white;
   box-sizing: border-box;
 }
-.button-container {
+.edit-button-container {
   display: flex;
   justify-content: center;
   width: 73.91px;
@@ -97,14 +97,14 @@
 .back-button {
   display: flex;
   align-items: center;
-  background-color: #73e4fd;
+  background-color: #E8703E;
+  color: white;
   border-radius: 10px;
   padding: 5px 15px;
   border:  2px;
   font-size: 28px;
 }
 .back-button:hover {
-  transform: scale(1.01);
   color: white;
   border: solid 2px white;
   box-sizing: border-box;
@@ -175,21 +175,19 @@
   }
   
   .edit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 15px;
-    font-size: 25px;
+    font-size: 20px;
   }
-  .button-container{
-    margin-top: 50px;
-  }
-
   .back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 15px;
-    font-size: 25px;
+    font-size: 20px;
   }
-  .back-button-container{
-    margin-top: 50px;
-  }
-  
   .sunscreen-detailPage-image {
     max-width: 150px;
     min-width: 120px;
@@ -220,3 +218,4 @@
   }
 }
 
+ 
