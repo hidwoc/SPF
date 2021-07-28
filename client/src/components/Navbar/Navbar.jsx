@@ -9,15 +9,10 @@ const Navbar = ({ user }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      // if we're at desktop size
-      if (window.innerWidth > 600) {
-        // make the nav visible
+      if (window.innerWidth > 771) {
         setVisible(true);
-        // untoggle the hamburger menu
         setHamburger(false);
       } else {
-        // otherwise...
-        //   make the nav invisible
         setVisible(false);
       }
     };
@@ -39,14 +34,10 @@ const Navbar = ({ user }) => {
           <i
             className="fa fa-bars"
             id="hamburger-logo"
-            onclick={() => setHamburger(!hamburger)}
+            onClick={() => setHamburger(!hamburger)}
           ></i>
         </div>
-        {/* if hamburger is toggled on: display flex column, hamburger toggle off is display none */}
-        {/* under 600px, visible=false & hamburger=false so links are diplay none*/}
-        {/* visible=false & toggle hamburger=true so links are display flex */}
-        {/* style={{ display: visible || hamburger ? "flex" : "none" }} */}
-        <div className="links">
+        <div className="links" style={{ display: visible || hamburger ? "flex" : "none" }} >
           <Link to="/sunscreens">SUNSCREENS</Link>
           {user ? (
             <Link to="/add-sunscreen">ADD NEW</Link>
@@ -59,8 +50,6 @@ const Navbar = ({ user }) => {
             <Link to="/sign-in">LOGIN</Link>
           )}
         </div>
-        {/* <a href="javascript:void(0);"  className="icon"> */}
-        {/* </a> */}
       </div>
     </nav>
   );
@@ -68,4 +57,5 @@ const Navbar = ({ user }) => {
 
 export default Navbar;
 
-// Hamburger Menu HTML&CSS from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+// Hamburger Menu React&CSS from: https://git.generalassemb.ly/sei-nyc-flamingos/hamburger-time/blob/solution/src/components/Nav.jsx
+// Additional Hamburger Menu HTML&CSS from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
