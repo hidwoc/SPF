@@ -38,7 +38,8 @@ const SunscreenDetail = (props) => {
                 <div className="applyToAndSPF">
                   <div className="applyto-info">
                     <h2>
-                      Apply To: <span id="applyToSpan"> {sunscreen.applyTo}</span>
+                      Apply To:{" "}
+                      <span id="applyToSpan"> {sunscreen.applyTo}</span>
                     </h2>
                   </div>
                   <div className="spf-info">
@@ -49,36 +50,31 @@ const SunscreenDetail = (props) => {
                   <h2>{sunscreen.category.join(", ")}</h2>
                 </div>
                 <div className="detailedButtons">
-                {user ? (
-                  <div className="button-container">
-                    <Link
-                      className="edit-button"
-                      to={`/sunscreens/${sunscreen._id}/edit`}
-                    >
-                      Edit
-                    </Link>
-                  </div>
-                ) : null}
-              {user ? (
-                <div className="back-button-container">
-                    <Link
-                      className="back-button"
-                      to={`/sunscreens`}
-                      >
+                  <div className="back-button-container">
+                    <Link className="back-button" to={`/sunscreens`}>
                       Back
                     </Link>
                   </div>
-                ) : null}
+                  {user ? (
+                    <div className="edit-button-container">
+                      <Link
+                        className="edit-button"
+                        to={`/sunscreens/${sunscreen._id}/edit`}
+                      >
+                        Edit
+                      </Link>
+                    </div>
+                  ) : null}
                 </div>
-                </div>
+              </div>
               <div className="rightSunDetails">
-               <div className="detail-img">
-                <img
-                  className="sunscreen-detailPage-image"
-                  src={image}
-                  alt={sunscreen.name}
-                  onError={handleError}
-                />
+                <div className="detail-img">
+                  <img
+                    className="sunscreen-detailPage-image"
+                    src={image}
+                    alt={sunscreen.name}
+                    onError={handleError}
+                  />
                 </div>
                 <h2 className="price-details">{`$${sunscreen.price}`}</h2>
               </div>
@@ -91,6 +87,5 @@ const SunscreenDetail = (props) => {
 };
 
 export default SunscreenDetail;
-
 
 //on Error code source from  https://stackoverflow.com/questions/34097560/react-js-replace-img-src-onerror
