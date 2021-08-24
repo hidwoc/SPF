@@ -5,9 +5,10 @@
 - Ecommerce Website for Sunscreens with full CRUD functionality and Authentication.
 - Collaboration with [Salman Ansari](https://github.com/ansarisalmansaa) and [Trisha Marchena](https://github.com/trishamarchena)
 
-## Deployed Link
+## Deployed Links
 
-https://spf-sth.netlify.app/
+
+https://spf-hidwoc.herokuapp.com
 
 ## Wireframes
 
@@ -27,7 +28,7 @@ https://spf-sth.netlify.app/
 
 ## API and Data Sample
 
-https://serene-earth-24708.herokuapp.com/
+https://spf-hidwoc.herokuapp.com/api/sunscreens
 
 ```
 {
