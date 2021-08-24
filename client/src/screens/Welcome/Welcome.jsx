@@ -2,6 +2,7 @@ import Layout from "../../components/Layout/Layout";
 import "./Welcome.css";
 import { Link } from "react-router-dom";
 const Welcome = (props) => {
+
   return (
     <Layout user={props.user}>
       <div className="WelcomePage">
