@@ -1,12 +1,9 @@
 # SPF
 
-# Project Name
-
-SPF
-
 ## Project Description
 
 - Ecommerce Website for Sunscreens with full CRUD functionality and Authentication.
+- Collaboration with [Salman Ansari](https://github.com/ansarisalmansaa) and [Trisha Marchena](https://github.com/trishamarchena)
 
 ## Deployed Link
 
